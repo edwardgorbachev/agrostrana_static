@@ -1,0 +1,199 @@
+.card-product .card-products-main-cols {
+  margin-top: 40px;
+}
+.card-product .bread-crumbs {
+  padding-left: 12px;
+}
+.card-product .bread-crumbs li {
+  padding-right: 20px;
+}
+.card-product .bread-crumbs li:after {
+  background: url(../images/right_arrow.png) no-repeat;
+  content: " ";
+  position: absolute;
+  width: 5px;
+  height: 8px;
+  margin: 3px 0 0 5px;
+}
+.card-product .news-list,
+.card-product .wiki-list {
+  padding-top: 20px;
+  margin-top: 30px;
+  font-family: 'Roboto Light', sans-serif;
+  line-height: 1.3;
+}
+.card-product .news-list .news-item,
+.card-product .wiki-list .news-item {
+  margin-bottom: 40px;
+  display: block;
+  padding: 20px 15px 0 15px;
+}
+.card-product .news-list .news-item .news-date,
+.card-product .wiki-list .news-item .news-date {
+  font-size: 13px;
+}
+.card-product .news-list .news-item .news-description,
+.card-product .wiki-list .news-item .news-description {
+  margin-top: 10px;
+  font-size: 17px;
+  padding-right: 40px;
+}
+.card-product .news-list .news-item .news-description span,
+.card-product .wiki-list .news-item .news-description span {
+  border-bottom: 1px solid #e6e6e6;
+}
+.card-product .news-list .news-item .news-description img,
+.card-product .wiki-list .news-item .news-description img {
+  position: relative;
+  top: -1px;
+}
+.card-product .news-list .news-item .more,
+.card-product .wiki-list .news-item .more {
+  margin-top: 20px;
+  font-size: 15px;
+}
+.card-product .news-list .news-item .more span,
+.card-product .wiki-list .news-item .more span {
+  border-bottom: 1px solid #e6e6e6;
+}
+.card-product .news-list .news-item .more img,
+.card-product .wiki-list .news-item .more img {
+  position: relative;
+  top: -1px;
+}
+.card-product .tab-link-news {
+  background: #f6f6f6;
+}
+.card-product .tab-link-news span {
+  border-bottom: 1px solid #e6e6e6;
+}
+.card-product .tab-link-wiki {
+  background: #01d185;
+  color: #FFFFFF;
+}
+.card-product .tab-link-wiki span {
+  border-bottom: 1px solid #1ad691;
+}
+.card-product .tabs li {
+  padding: 20px 30px;
+}
+.card-product .tab-content.wiki-tab {
+  background: #01d185;
+  color: #FFFFFF;
+}
+.card-product .tab-content.wiki-tab .news-item {
+  color: #FFFFFF;
+}
+.card-product .tab-content.wiki-tab .news-item .news-description span {
+  border-bottom: 1px solid #1ad691;
+}
+.card-product .tab-content.wiki-tab .news-item .more span {
+  border-bottom: 1px solid #1ad691;
+}
+.card-product .tab-content.news-tab {
+  background: #f6f6f6;
+}
+.card-product .right-col-adv {
+  margin: 50px 0 0;
+  text-align: center;
+}
+.card-product .advertision-item {
+  display: flex;
+}
+.card-product .product-card-info .product-card-info-header {
+  width: 100%;
+  margin-top: 40px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: baseline;
+  -ms-align-items: baseline;
+  align-items: baseline;
+}
+.card-product .product-card-info .product-card-info-header .product-name {
+  flex: 1;
+  font-size: 24px;
+  padding-left: 15px;
+  font-family: 'Roboto Light', sans-serif;
+  font-weight: normal;
+}
+.card-product .product-card-info .product-card-info-header .product-date {
+  flex: 0.5;
+  color: #01d185;
+  text-align: right;
+  padding-right: 40px;
+}
+.card-product .product-card-photos-container {
+  margin-top: 25px;
+}
+.card-product .product-card-photos-container .product-card-photos-list {
+  box-sizing: border-box;
+  width: 135px;
+  float: left;
+  padding: 0 15px;
+}
+.card-product .product-card-photos-container .product-card-photos-list ul li {
+  margin-bottom: 5px;
+}
+.card-product .product-card-photos-container .product-card-main-photo {
+  padding: 0 15px;
+}
+.card-product .product-card-photos-container .next-photo {
+  height: 31px;
+  background: url(../images/right_arrow.png) center no-repeat #ededed;
+}
+.card-product .product-card-description {
+  margin-top: 40px;
+  padding-right: 15px;
+  font-size: 18px;
+  font-family: 'Roboto Light', sans-serif;
+}
+.card-product .product-card-description strong {
+  font-family: 'Roboto', sans-serif;
+}
+.card-product .product-card-description h5 {
+  font-size: 24px;
+  font-family: 'Roboto Light', sans-serif;
+  font-weight: normal;
+  margin-bottom: 24px;
+}
+.card-product .product-card-description .product-card-params {
+  padding-right: 0;
+}
+@media all and (max-width: 991px) {
+  .card-product .product-card-description .product-card-user-info {
+    margin-top: 60px;
+  }
+  .card-product .product-card-description .product-card-description-text {
+    padding-bottom: 60px;
+  }
+}
+@media all and (min-width: 992px) {
+  .card-product .product-card-description .product-card-user-info .user-photo {
+    padding-left: 0;
+  }
+}
+.card-product .product-card-description .product-card-user-info .user-photo img {
+  border-radius: 100%;
+}
+.card-product .product-card-description .product-card-user-info .user-personal-data {
+  padding-left: 0;
+  padding-right: 0;
+}
+.card-product .product-card-description .product-card-user-info .user-personal-data .btn-green {
+  margin-top: 20px;
+}
+.card-product .product-card-description .product-card-description-text {
+  margin-top: 30px;
+  line-height: 1.3;
+}
+@media all and (max-width: 1199px) {
+  .card-product .home-advertision .col-md-4 {
+    width: 400px;
+  }
+}
+/*# sourceMappingURL=card_product.css.map */

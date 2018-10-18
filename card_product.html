@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Агространа. Карточка товара.</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="resources/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="resources/css/slick.css" rel="stylesheet">
+    <script type="text/javascript" src="resources/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="resources/js/slick.min.js"></script>
+    <script type="text/javascript" src="resources/js/main.js"></script>
+</head>
+<body class="card-product">
+
+    <div class="header-wrapper">
+        <header>
+            <div class="menu-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 clearfix">
+
+                            <div class="logo pull-left">
+                                <a href="index.html">
+                                    <img class="img-responsive" src="resources/images/logo.png" alt="Logo">
+                                    <span>Агространа</span>
+                                </a>
+                            </div>
+
+
+                            <ul class="main-menu pull-left">
+                                <li class="mobile-close mobile"><a href="javascript:void(0);">закрыть</a></li>
+                                <li><a href="javascript:void(0);">Объявления</a></li>
+                                <li><a href="javascript:void(0);">Новости</a></li>
+                                <li><a href="javascript:void(0);">Фото и видео</a></li>
+                                <li class="mobile-logo mobile">
+                                    <a href="index.html">
+                                        <img class="img-responsive" src="resources/images/logo.png" alt="Logo">
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="javascript:void(0);" class="mobile-bars clearfix">
+                                <div class="bars">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </a>
+
+                            <div class="login text-md-center pull-right hidden-sm">
+                                <a href="#">Вход/Регистрация</a> <button>Разместить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="header-content">
+            <div class="container clearfix">
+
+                    <div class="col-xs-12 page-header text-center">
+                        <h2>Универсальная торговая площадка</h2>
+                    </div>
+
+                    <div class="col-xs-12 col-md-10 col-md-offset-1 top-search-form clearfix">
+                        <form action="">
+                            <div class="row search-fields-wrapper">
+                                <div class="col-md-6 col-sm-12"><input type="text" name="q" value="" placeholder="Что ищем?" /></div>
+                                <div class="col-md-5 col-sm-12"><input type="text" name="place" value="" placeholder="Где ищем?" /></div>
+                                <div class="col-md-1 col-sm-12 text-xs-center">
+                                    <button class="btn" type="submit">Найти</button>
+                                </div>
+                            </div>
+
+                            <div class="line lines-wrapper clearfix">&nbsp;</div>
+
+
+                            <div class="options clearfix row lines-wrapper hidden-xs hidden-sm">
+
+                                <div class="clearfix">
+
+                                    <div class="type col-md-3 col-sm-12 col-xs-12 clearfix options-offset">
+
+                                        <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
+                                            <div class="checkbox">
+                                                <input type="checkbox" name="service-options" value="1" id="option_type">
+                                                <label for="option_type"></label>
+                                            </div>
+                                            <div class="service-name">
+                                                <span>Морская</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
+                                            <div class="checkbox">
+                                                <input type="checkbox" name="service-options" value="1" id="type-1-2">
+                                                <label for="type-1-2"></label>
+                                            </div>
+                                            <div class="service-name">
+                                                <span>Речная</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="type-2 col-md-3 col-sm-12 col-xs-12 clearfix">
+
+                                        <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
+                                            <div class="checkbox">
+                                                <input type="radio" name="service-options" value="" id="type-2-1">
+                                                <label for="type-2-1"></label>
+                                            </div>
+                                            <div class="service-name">
+                                                <span>Тушки</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
+                                            <div class="checkbox">
+                                                <input type="radio" name="service-options" value="" id="type-2-2">
+                                                <label for="type-2-2"></label>
+                                            </div>
+                                            <div class="service-name">
+                                                <span>Филе</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="type col-md-3 col-sm-12 col-xs-12 clearfix lines-wrapper">
+
+                                        <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
+                                            <div class="checkbox">
+                                                <input type="checkbox" name="service-options" value="" id="type-3-1">
+                                                <label for="type-3-1"></label>
+                                            </div>
+                                            <div class="service-name">
+                                                <span>Свежая</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
+                                            <div class="checkbox">
+                                                <input type="checkbox" name="service-options" value="" id="type-3-2">
+                                                <label for="type-3-2"></label>
+                                            </div>
+                                            <div class="service-name">
+                                                <span>Мороженая</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="service-option col-md-3 col-sm-12 col-xs-12clearfix lines-wrapper">
+
+                                        <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
+                                            <div class="checkbox">
+                                                <input type="checkbox" name="service-options" value="" id="type-3-3">
+                                                <label for="type-3-3"></label>
+                                            </div>
+                                            <div class="service-name">
+                                                <span>Копченая</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
+                                            <div class="checkbox">
+                                                <input type="checkbox" name="service-options" value="" id="type-3-4">
+                                                <label for="type-3-4"></label>
+                                            </div>
+                                            <div class="service-name">
+                                                <span>Сушеная</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+
+                            <div class="show-xs show-sm" style="margin-left: 40px;">
+
+                                <div class="clearfix">
+
+                                    <div class="type">
+
+                                        <div style="width: 200px; margin: 0 auto;" class="clearfix">
+
+                                            <div class="checkbox" style="width: 30px; float: left;">
+                                                <input type="checkbox" name="service-options" value="1" id="option_type">
+                                                <label for="option_type"></label>
+
+                                            </div>
+
+                                            <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                                <span>Морская</span>
+                                            </div>
+
+                                            <div class="checkbox" style="width: 30px; float: left;">
+                                                <input type="checkbox" name="service-options" value="1" id="type-1-2">
+                                                <label for="type-1-2"></label>
+
+                                            </div>
+
+                                            <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                                <span>Речная</span>
+                                            </div>
+
+                                        </div>
+
+
+                                        <!---->
+                                        <!---->
+                                        <!---->
+                                        <!---->
+                                        <!---->
+
+                                        <div style="width: 200px; margin: 20px auto 0;" class="clearfix">
+
+                                            <div class="checkbox" style="width: 30px; float: left;">
+                                                <input type="radio" name="service-options" value="1" id="option_type">
+                                                <label for="option_type"></label>
+
+                                            </div>
+
+                                            <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                                <span>Тушки</span>
+                                            </div>
+
+                                            <div class="checkbox" style="width: 30px; float: left;">
+                                                <input type="radio" name="service-options" value="1" id="type-1-2">
+                                                <label for="type-1-2"></label>
+
+                                            </div>
+
+                                            <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                                <span>Филе</span>
+                                            </div>
+
+                                        </div>
+
+                                        <div style="width: 200px; margin: 20px auto 0;" class="clearfix">
+
+                                            <div class="checkbox" style="width: 30px; float: left;">
+                                                <input type="checkbox" name="service-options" value="1" id="option_type">
+                                                <label for="option_type"></label>
+
+                                            </div>
+
+                                            <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                                <span>Свежая</span>
+                                            </div>
+
+                                            <div class="checkbox" style="width: 30px; float: left;">
+                                                <input type="checkbox" name="service-options" value="1" id="type-1-2">
+                                                <label for="type-1-2"></label>
+
+                                            </div>
+
+                                            <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                                <span>Мороженая</span>
+                                            </div>
+
+                                        </div>
+
+                                        <div style="width: 200px; margin: 20px auto 0;" class="clearfix">
+
+                                            <div class="checkbox" style="width: 30px; float: left;">
+                                                <input type="checkbox" name="service-options" value="1" id="option_type">
+                                                <label for="option_type"></label>
+
+                                            </div>
+
+                                            <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                                <span>Копченая</span>
+                                            </div>
+
+                                            <div class="checkbox" style="width: 30px; float: left;">
+                                                <input type="checkbox" name="service-options" value="1" id="type-1-2">
+                                                <label for="type-1-2"></label>
+
+                                            </div>
+
+                                            <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                                <span>Сушеная</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div class="options-2 clearfix" style="margin-top: 0;">
+
+                                        <div>
+
+                                            <div style="width: 250px; margin: 20px auto 0;">
+
+                                                <div>
+                                                    <div class="service-name" style="width: 100px; float:left; margin: 0">
+                                                        <span>Производитель:</span>
+                                                    </div>
+                                                </div>
+
+                                                <div style="width: 70px; float:left; ">
+                                                    <select>
+                                                        <option value="0">Не имеет значения</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="options-2 clearfix" style="margin-top: 0;">
+
+                                        <div>
+
+                                            <div style="width: 250px; margin: 20px auto 0;">
+
+                                                <div class="service-name" style="width: 100px; float:left; margin: 0">
+                                                    <span>Цена, кг:</span>
+                                                </div>
+                                                <div class="inputs clearfix">
+
+                                                    <input type="text" value="" placeholder="от" />
+                                                    <input type="text" value="" placeholder="до" />
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div style="width: 120px; margin: 20px auto; ">
+
+                                        <button class="btn" type="submit">Показать</button>
+
+                                    </div>
+
+
+                                    <!--Тушки-->
+                                    <!--Филе-->
+                                    <!--Свежая-->
+                                    <!--Мороженая-->
+                                    <!--Копченая-->
+                                    <!--Сушеная-->
+
+                                </div>
+
+                            </div>
+
+                            <!--<div class="options-2 clearfix">-->
+
+                                <!--<div class="row">-->
+
+                                    <!--<div class="col-md-12 clearfix">-->
+
+                                        <!--<div class="service-option col-md-3 col-sm-6 col-xs-6 text-md-right text-sm-left text-xs-left text-xs-left clearfix">-->
+                                            <!--<div class="service-name text-sm-left text-xs-center text-md-right text-xs-left">-->
+                                                <!--<span>Производитель:</span>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+
+                                        <!--<div class="service-option col-md-3 col-sm-6 col-xs-6 text-sm-right text-xs-center clearfix">-->
+                                            <!--<select>-->
+                                                <!--<option value="0">Не имеет значения</option>-->
+                                            <!--</select>-->
+                                        <!--</div>-->
+
+                                        <!--<div class="service-option col-md-6 col-sm-12 col-xs-12 lines-wrapper clearfix">-->
+
+                                            <!--<div class="service-option-inputs">-->
+
+                                                <!--<div class="service-name service-name-inputs">-->
+                                                    <!--<span>Цена, кг:</span>-->
+                                                <!--</div>-->
+                                                <!--<div class="inputs clearfix">-->
+
+                                                    <!--<input type="text" value="" placeholder="от" />-->
+                                                    <!--<input type="text" value="" placeholder="до" />-->
+                                                    <!--<button class="btn" type="submit">Показать</button>-->
+                                                <!--</div>-->
+
+                                            <!--</div>-->
+
+                                            <!--&lt;!&ndash;<div class="service-option">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+                                        <!--</div>-->
+
+                                    <!--</div>-->
+
+                                <!--</div>-->
+
+
+                            <!--</div>-->
+
+                        </form>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="card-products-main-cols">
+
+        <div class="container clearfix">
+
+            <div class="col-md-8 clearfix">
+
+                <div class="bread-crumbs">
+
+                    <ul class="list-inline underline-links">
+
+                        <li><a href="#">Сельскохозяйственная техника</a></li>
+                        <li><a href="#">Запчасти для сельхозтехники</a></li>
+                        <li><a href="#">Другие запчасти</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="product-card-info">
+
+                    <div class="product-card-info-header clearfix">
+
+                        <div class="product-name">
+
+                            Фланец 51-4913-А кардана ГАЗ-53.
+
+                        </div>
+
+                        <div class="product-date hidden-xs">
+
+                            8 августа 2015
+
+                        </div>
+
+                    </div>
+
+                    <div class="product-card-photos-container clearfix hidden-xs">
+
+                        <div class="product-card-photos-list">
+
+                            <ul class="list-unstyled">
+                                <li><a href="#"><img src="resources/images/product_card/product_card_main_preview_01.jpg" alt=""/></a></li>
+                                <li><a href="#"><img src="resources/images/product_card/product_card_main_preview_02.jpg" alt=""/></a></li>
+                                <li><a href="#"><img src="resources/images/product_card/product_card_main_preview_03.jpg" alt=""/></a></li>
+                            </ul>
+
+                            <div class="next-photo">&nbsp;</div>
+
+                        </div>
+
+                        <div class="product-card-main-photo">
+
+                            <img src="resources/images/product_card/product_card_main_img.jpg" alt=""/>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product-card-description clearfix">
+
+                        <div class="product-card-params col-md-6 col-sm-12 col-xs-12 text-sm-center text-xs-center clearfix">
+
+                            <h5>Описание</h5>
+
+                            <p><strong>Цена</strong>: 1 200 руб/шт</p>
+                            <p><strong>Год выпуска</strong>: 1997</p>
+                            <p><strong>Модель</strong>:</p>
+                            <p><strong>Доставка</strong>: Самовывоз</p>
+                            <p><strong>Местонахождение</strong>: Ростовская область/Россия</p>
+                            <p><strong>Мощность</strong>: 0</p>
+                            <p><strong>Пробег/моточасы</strong>: 0</p>
+                            <p><strong>Пробег/моточасы</strong>:</p>
+                            <p><strong>Наличие</strong>: В наличии</p>
+                            <p><strong>Описание товара</strong>: Новый. С хранения. В рабочем состоянии. Сделан в СССР.</p>
+
+
+                        </div>
+
+                        <div class="product-card-user-info col-md-6 col-sm-12 text-sm-center text-xs-center col-xs-12 clearfix">
+
+                            <h5>Данные пользователя</h5>
+
+                            <div class="user-photo col-md-3 col-sm-4 col-xs-4 text-sm-right clearfix">
+                                <img src="resources/images/photo_dumb.png" alt="" />
+                            </div>
+
+                            <div class="user-personal-data col-md-9 col-sm-8 col-xs-8 text-sm-left clearfix">
+                                <p><strong>ДЬЯЧКИН ИВАН ПЕТРОВИЧ</strong></p>
+                                <p>
+                                    Партнёр, 3 года 8 месяцев в системе
+                                </p>
+
+                                <button class="btn-green"><a href="#">Показать телефон</a></button>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card-description-text col-md-12 text-sm-center text-xs-center clearfix">
+
+                            <div class="clearfix">&nbsp;</div>
+                            <!-- TEMPORARY FIX -->
+                            <div class="show-sm"><br /><br /><br /></div>
+                            <p><strong>Описание товара</strong>: ДВУХРЯДНЫЕ БОРОНЫ ДИСКОВЫЕ СЕРИИ БДМ ООО «БДТ–АГРО» является разработчиком и изготовителем сельхозорудий: Борон дисковых модернизированных (БДМ) – прицепных и навесных, 2-х, 3-х и 4-х рядных шириной захвата от 1,2 до 9,3 метров. Двухрядная дисковая борона серии БДМ с рабочим органом на индивидуальной стойке и изменением угла атаки дисков, предназначена для традиционной, минимальной, основной и предпосевной обработки почвы (до 15 см) под все виды культур с измельчением пожнивных остатков и заделкой их в обрабатываемый слой почвы без предварительной вспашки.</p>
+
+                            <p>В настоящее время ООО «БДТ-АГРО» производит все дисковые бороны со смазывающимися стойками. Смазываемое сопряжение втулка-стойка предотвращает коксование стоек и повышает надежность дисковой бороны. Двухрядная борона применяется в различных агроклиматических зонах России и на всех типах почв. Особенно эффективно используется для лущения стерни, уничтожения сорняков, разделки пласта многолетних трав, обработки междурядий садов и виноградников, обработки рисовых чеков, омоложения лугов и пастбищ.</p>
+                            <p>Основные преимущества 2-х рядных борон БДМ в сравнении с 3-х и 4-х рядными орудиями: 1. Расстояние между рядами дисков увеличено до 1000 мм, что исключает забивание орудия и позволяет работать при высокой влажности и засоренности поля. 2. Меньшее требуемое тяговое усилие на серьге, позволяет использовать широкозахватные орудия и обрабатывать большие площади в максимально короткие сроки.</p>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-4 clearfix">
+
+                <ul class="tabs">
+                    <li class="tab-link current col-md-6 col-xs-6 tab-link-news" data-tab="tab-1"><span>Новости</span></li>
+                    <li class="tab-link col-md-6 col-xs-6 tab-link-wiki" data-tab="tab-2"><span>АгроWIKI</span></li>
+                </ul>
+
+                <div id="tab-1" class="tab-content current news-tab">
+
+                    <ul class="news-list list-unstyled">
+
+                        <li>
+
+                            <a href="#" class="news-item clearfix">
+
+                                <div class="news-date">10 октября 2018 года</div>
+                                <div class="news-description"><span>Прохладное и дождливое лето на Среднем Урале повысит цену молока на 10%</span></div>
+                                <div class="more"><span>Узнать больше</span>&nbsp;<img src="resources/images/right_arrow.png" alt="" /></div>
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#" class="news-item clearfix">
+
+                                <div class="news-date">10 октября 2018 года</div>
+                                <div class="news-description"><span>Прохладное и дождливое лето на Среднем Урале повысит цену молока на 10%</span></div>
+                                <div class="more"><span>Узнать больше</span>&nbsp;<img src="resources/images/right_arrow.png" alt="" /></div>
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#" class="news-item clearfix">
+
+                                <div class="news-date">10 октября 2018 года</div>
+                                <div class="news-description"><span>Прохладное и дождливое лето на Среднем Урале повысит цену молока на 10%</span></div>
+                                <div class="more"><span>Узнать больше</span>&nbsp;<img src="resources/images/right_arrow.png" alt="" /></div>
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div id="tab-2" class="tab-content wiki-tab">
+
+                    <ul class="wiki-list list-unstyled">
+
+                        <li>
+
+                            <a href="#" class="news-item clearfix">
+
+                                <div class="news-date">10 октября 2018 года</div>
+                                <div class="news-description"><span>Прохладное и дождливое лето на Среднем Урале повысит цену молока на 10%</span></div>
+                                <div class="more"><span>Узнать больше</span>&nbsp;<img src="resources/images/right_arrow_white.png" alt="" /></div>
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#" class="news-item clearfix">
+
+                                <div class="news-date">10 октября 2018 года</div>
+                                <div class="news-description"><span>Прохладное и дождливое лето на Среднем Урале повысит цену молока на 10%</span></div>
+                                <div class="more"><span>Узнать больше</span>&nbsp;<img src="resources/images/right_arrow_white.png" alt="" /></div>
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#" class="news-item clearfix">
+
+                                <div class="news-date">10 октября 2018 года</div>
+                                <div class="news-description"><span>Прохладное и дождливое лето на Среднем Урале повысит цену молока на 10%</span></div>
+                                <div class="more"><span>Узнать больше</span>&nbsp;<img src="resources/images/right_arrow_white.png" alt="" /></div>
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="right-col-adv">
+
+                    <img class="img-responsive" src="resources/images/product_card_right_col_adv.jpg" align="" />
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="home-advertision clearfix">
+
+        <div class="container">
+
+            <div class="block-headers clearfix">
+
+                <div class="block-header col-md-6 col-sm-6 text-xs-center clearfix">
+
+                    <h4>Товары из статьи</h4>
+
+                </div>
+
+                <div class="block-link-all col-md-6 col-sm-6 text-right hidden-xs clearfix">
+
+                    <a href="card_product.html"><span>Все предложения</span>&nbsp;<img src="resources/images/right_arrow.png" alt="" /></a>
+
+                </div>
+
+            </div>
+
+            <div class="advertision-list">
+
+                <section class="gallery">
+
+                    <div class="col-md-4">
+
+                        <div class="advertision-item">
+
+                            <div class="image">
+                                <img src="resources/images/adv_image.jpg" alt="" />
+                            </div>
+
+                            <div class="text">
+
+                                <div class="description"><a href="card_product.html">Фланец 51-4913-А кардана ГАЗ-53.</a></div>
+                                <div class="date">10 октября в 17:00</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 hidden-xs hidden-sm">
+
+                        <div class="advertision-item">
+
+                            <div class="image">
+                                <img src="resources/images/adv_image.jpg" alt="" />
+                            </div>
+
+                            <div class="text">
+
+                                <div class="description"><a href="card_product.html">Фланец 51-4913-А кардана ГАЗ-53.</a></div>
+                                <div class="date">10 октября в 17:00</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 sm-6 hidden-xs hidden-sm hidden-md">
+
+                        <div class="advertision-item">
+
+                            <div class="image">
+                                <img src="resources/images/adv_image.jpg" alt="" />
+                            </div>
+
+                            <div class="text">
+
+                                <div class="description"><a href="card_product.html">Фланец 51-4913-А кардана ГАЗ-53.</a></div>
+                                <div class="date">10 октября в 17:00</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container hidden-xs hidden-sm" style="margin-top: 100px;">
+
+        <div><a href="#"><img class="img-responsive" src="resources/images/sber-big.jpg" alt="" /></a></div>
+
+    </div>
+
+    <footer>
+
+        <div class="container">
+            <div class="row">
+                <div class="footer-top-content clearfix text-sm-center text-xs-center">
+                    <div class="col-md-1">
+                        <a href="index.html"><img class="footer-logo" src="resources/images/logo.png" alt=""></a>
+                    </div>
+                    <div class="col-md-10">
+                        <ul class="list-inline">
+                            <li><a href="javascript:void(0);">Выставки</a></li>
+                            <li><a href="javascript:void(0);">Стандарты</a></li>
+                            <li><a href="javascript:void(0);">Словарь</a></li>
+                            <li><a href="javascript:void(0);">Помощь и поддержка</a></li>
+                            <li><a href="javascript:void(0);">Пользовательское соглашение</a></li>
+                        </ul>
+
+                        <div class="copyright-text-socials clearfix">
+                            <div class="copyright-text">
+                                &copy; 2012-2018, &laquo;Агространа&raquo;.
+                            </div>
+                            <div class="socials clearfix">
+                                <ul class="list-inline">
+                                    <li><a href="#"><img src="resources/images/social/vk.png" alt=""/></a></li>
+                                    <li><a href="#"><img src="resources/images/social/facebook.png" alt=""/></a></li>
+                                    <li><a href="#"><img src="resources/images/social/ok.png" alt=""/></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-1 text-right">
+                        <a href="javascript:void(0);" id="go-to-top" class="up-arrow"><img src="resources/images/arrow.jpg" alt="UP" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>

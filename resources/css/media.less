@@ -17,11 +17,25 @@
     .text-sm-left {
         text-align: left;
     }
+
+    .text-sm-center {
+        text-align: center;
+    }
+
+    .show-xs {
+        display: none;
+    }
 }
 @media all and (min-width: 992px) {
+
+    .show-sm {
+        display: none;
+    }
+
     .mobile-bars {
         display: none;
     }
+
     .flex-md {
         display: -webkit-flex;
         display: -webkit-box;
@@ -38,6 +52,13 @@
     }
     .mobile {
         display: none;
+    }
+
+    .text-md-right {
+        text-align: right;
+    }
+    .text-md-left {
+        text-align: left;
     }
 
     .home-info {
@@ -102,6 +123,7 @@
     }
 }
 @media all and (max-width: 1199px) {
+
     .footer-contacts {
         .btn {
             margin: 0;
@@ -115,8 +137,50 @@
         margin: 0;
         width: 100%;
     }
+
+    .hidden-md {
+        display: none;
+    }
 }
 @media all and (max-width: 991px) {
+
+    .show-sm {
+        display: block;
+    }
+
+    footer {
+
+        text-align: center;
+
+        .list-inline {
+            float: none !important;
+            line-height: 2;
+
+            li {
+                display: block !important;
+            }
+        }
+
+        .copyright-text {
+            float: none !important;
+            width: 100% !important;
+        }
+
+        .socials {
+
+            margin: 20px auto !important;
+            width: 150px !important;
+
+            .list-inline {
+                float: left !important;
+
+                li {
+                    display: inline-block !important;
+                }
+            }
+        }
+    }
+
     .text-sm-right {
         text-align: right;
     }
@@ -124,6 +188,11 @@
         text-align: center;
         padding: 0 9px;
     }
+
+    .hidden-sm {
+        display: none;
+    }
+
     header {
         .menu-wrapper {
             padding-top: 35px;
@@ -182,13 +251,21 @@
             }
         }
     }
-
-
 }
 @media all and (max-width: 768px) {
+
+    .home-info .news-info .news-list .news-item {
+        margin-bottom: 0 !important;
+    }
+
     .text-xs-center {
         text-align: center;
     }
+
+    .show-xs {
+        display: block;
+    }
+
     .flex-xs-wrap {
         -webkit-flex-wrap: wrap;
         -moz-flex-wrap: wrap;
@@ -205,11 +282,23 @@
     .btn.btn-medium {
         font-size: 13px;
     }
+
+    .card-product .bread-crumbs ul li {
+        width: 100%;
+        line-height: 1.6;
+        text-align: center;
+
+        &:after {
+            margin-top: 6px;
+        }
+    }
+
+    .hidden-xs {
+        display: none;
+    }
 }
 @media all and (max-width: 550px) {
-    .logo {
-        width: 75%;
-    }
+
     h3 {
         font-size: 40px;
     }

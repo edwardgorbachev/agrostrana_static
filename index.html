@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="resources/css/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script type="text/javascript" src="resources/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="resources/js/main.js"></script>
 </head>
 <body class="home">
 
@@ -38,14 +40,13 @@
                                 </li>
                             </ul>
 
-                            <!--<a href="javascript:void(0);" class="mobile-bars clearfix">-->
-                                <!--<div class="bars">-->
-                                    <!--<span></span><span></span><span></span>-->
-                                <!--</div>-->
-                                <!--<span>menu</span>-->
-                            <!--</a>-->
+                            <a href="javascript:void(0);" class="mobile-bars clearfix">
+                                <div class="bars">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </a>
 
-                            <div class="login text-md-center pull-right">
+                            <div class="login text-md-center pull-right hidden-xs hidden-sm">
                                 <a href="#">Вход/Регистрация</a> <button>Разместить</button>
                             </div>
                         </div>
@@ -72,167 +73,348 @@
 
                             <div class="line lines-wrapper clearfix">&nbsp;</div>
 
-                            <div class="options clearfix row lines-wrapper">
+                                    <div class="options clearfix row lines-wrapper hidden-xs hidden-sm">
 
-                                <div class="clearfix">
+                                        <div class="clearfix">
 
-                                    <div class="type col-md-3 col-sm-6 col-xs-6 clearfix options-offset">
+                                            <div class="type col-md-3 col-sm-12 col-xs-12 clearfix options-offset">
 
-                                        <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
-                                            <div class="checkbox">
-                                                <input type="checkbox" name="service-options" value="1" id="option_type">
-                                                <label for="option_type"></label>
-                                            </div>
-                                            <div class="service-name">
-                                                <span>Морская</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
-                                            <div class="checkbox">
-                                                <input type="checkbox" name="service-options" value="1" id="type-1-2">
-                                                <label for="type-1-2"></label>
-                                            </div>
-                                            <div class="service-name">
-                                                <span>Речная</span>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="type-2 col-md-3 col-sm-6 col-xs-6 clearfix">
-
-                                        <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
-                                            <div class="checkbox">
-                                                <input type="radio" name="service-options" value="lease" id="type-2-1">
-                                                <label for="type-2-1"></label>
-                                            </div>
-                                            <div class="service-name">
-                                                <span>Тушки</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
-                                            <div class="checkbox">
-                                                <input type="radio" name="service-options" value="lease" id="type-2-2">
-                                                <label for="type-2-2"></label>
-                                            </div>
-                                            <div class="service-name">
-                                                <span>Филе</span>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-
-                                    <div class="type col-md-3 col-sm-6 col-xs-6 clearfix lines-wrapper">
-
-                                        <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
-                                            <div class="checkbox">
-                                                <input type="checkbox" name="service-options" value="lease" id="type-3-1">
-                                                <label for="type-3-1"></label>
-                                            </div>
-                                            <div class="service-name">
-                                                <span>Свежая</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
-                                            <div class="checkbox">
-                                                <input type="checkbox" name="service-options" value="lease" id="type-3-2">
-                                                <label for="type-3-2"></label>
-                                            </div>
-                                            <div class="service-name">
-                                                <span>Мороженая</span>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="service-option col-md-3 col-sm-6 col-xs-6 clearfix lines-wrapper">
-
-                                        <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
-                                            <div class="checkbox">
-                                                <input type="checkbox" name="service-options" value="lease" id="type-3-3">
-                                                <label for="type-3-3"></label>
-                                            </div>
-                                            <div class="service-name">
-                                                <span>Копченая</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
-                                            <div class="checkbox">
-                                                <input type="checkbox" name="service-options" value="lease" id="type-3-4">
-                                                <label for="type-3-4"></label>
-                                            </div>
-                                            <div class="service-name">
-                                                <span>Сушеная</span>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="options-2 clearfix">
-
-                                <div class="row">
-
-                                    <div class="col-md-12 clearfix">
-
-                                        <div class="service-option col-md-3 col-sm-6 col-xs-6 text-sm-left text-xs-left clearfix">
-                                            <div class="service-name text-sm-left text-xs-left">
-                                                <span>Производитель:</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="service-option col-md-3 col-sm-6 col-xs-6 text-sm-right clearfix">
-                                            <select>
-                                                <option value="0">Не имеет значения</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="service-option col-md-6 col-sm-12 col-xs-12 lines-wrapper clearfix">
-
-                                            <div class="service-option-inputs">
-
-                                                <div class="service-name service-name-inputs">
-                                                    <span>Цена, кг:</span>
+                                                <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" name="service-options" value="1" id="option_type">
+                                                        <label for="option_type"></label>
+                                                    </div>
+                                                    <div class="service-name">
+                                                        <span>Морская</span>
+                                                    </div>
                                                 </div>
-                                                <div class="inputs clearfix">
 
-                                                    <input type="text" value="" placeholder="от" />
-                                                    <input type="text" value="" placeholder="до" />
-                                                    <button class="btn" type="submit">Показать</button>
+                                                <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" name="service-options" value="1" id="type-1-2">
+                                                        <label for="type-1-2"></label>
+                                                    </div>
+                                                    <div class="service-name">
+                                                        <span>Речная</span>
+                                                    </div>
                                                 </div>
 
                                             </div>
 
-                                            <!--<div class="service-option">-->
+                                            <div class="type-2 col-md-3 col-sm-12 col-xs-12 clearfix">
+
+                                                <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
+                                                    <div class="checkbox">
+                                                        <input type="radio" name="service-options" value="" id="type-2-1">
+                                                        <label for="type-2-1"></label>
+                                                    </div>
+                                                    <div class="service-name">
+                                                        <span>Тушки</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
+                                                    <div class="checkbox">
+                                                        <input type="radio" name="service-options" value="" id="type-2-2">
+                                                        <label for="type-2-2"></label>
+                                                    </div>
+                                                    <div class="service-name">
+                                                        <span>Филе</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="type col-md-3 col-sm-12 col-xs-12 clearfix lines-wrapper">
+
+                                                <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" name="service-options" value="" id="type-3-1">
+                                                        <label for="type-3-1"></label>
+                                                    </div>
+                                                    <div class="service-name">
+                                                        <span>Свежая</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" name="service-options" value="" id="type-3-2">
+                                                        <label for="type-3-2"></label>
+                                                    </div>
+                                                    <div class="service-name">
+                                                        <span>Мороженая</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="service-option col-md-3 col-sm-12 col-xs-12clearfix lines-wrapper">
+
+                                                <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" name="service-options" value="" id="type-3-3">
+                                                        <label for="type-3-3"></label>
+                                                    </div>
+                                                    <div class="service-name">
+                                                        <span>Копченая</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" name="service-options" value="" id="type-3-4">
+                                                        <label for="type-3-4"></label>
+                                                    </div>
+                                                    <div class="service-name">
+                                                        <span>Сушеная</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                    <div class="show-xs show-sm" style="margin-left: 40px;">
+
+                                        <div class="clearfix">
+
+                                            <div class="type">
+
+                                                <div style="width: 200px; margin: 0 auto;" class="clearfix">
+
+                                                    <div class="checkbox" style="width: 30px; float: left;">
+                                                        <input type="checkbox" name="service-options" value="1" id="option_type">
+                                                        <label for="option_type"></label>
+
+                                                    </div>
+
+                                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                                        <span>Морская</span>
+                                                    </div>
+
+                                                    <div class="checkbox" style="width: 30px; float: left;">
+                                                        <input type="checkbox" name="service-options" value="1" id="type-1-2">
+                                                        <label for="type-1-2"></label>
+
+                                                    </div>
+
+                                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                                        <span>Речная</span>
+                                                    </div>
+
+                                                </div>
+
+
                                                 <!---->
-                                            <!--</div>-->
+                                                <!---->
+                                                <!---->
+                                                <!---->
+                                                <!---->
+
+                                                <div style="width: 200px; margin: 20px auto 0;" class="clearfix">
+
+                                                    <div class="checkbox" style="width: 30px; float: left;">
+                                                        <input type="radio" name="service-options" value="1" id="option_type">
+                                                        <label for="option_type"></label>
+
+                                                    </div>
+
+                                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                                        <span>Тушки</span>
+                                                    </div>
+
+                                                    <div class="checkbox" style="width: 30px; float: left;">
+                                                        <input type="radio" name="service-options" value="1" id="type-1-2">
+                                                        <label for="type-1-2"></label>
+
+                                                    </div>
+
+                                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                                        <span>Филе</span>
+                                                    </div>
+
+                                                </div>
+
+                                                <div style="width: 200px; margin: 20px auto 0;" class="clearfix">
+
+                                                    <div class="checkbox" style="width: 30px; float: left;">
+                                                        <input type="checkbox" name="service-options" value="1" id="option_type">
+                                                        <label for="option_type"></label>
+
+                                                    </div>
+
+                                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                                        <span>Свежая</span>
+                                                    </div>
+
+                                                    <div class="checkbox" style="width: 30px; float: left;">
+                                                        <input type="checkbox" name="service-options" value="1" id="type-1-2">
+                                                        <label for="type-1-2"></label>
+
+                                                    </div>
+
+                                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                                        <span>Мороженая</span>
+                                                    </div>
+
+                                                </div>
+
+                                                <div style="width: 200px; margin: 20px auto 0;" class="clearfix">
+
+                                                    <div class="checkbox" style="width: 30px; float: left;">
+                                                        <input type="checkbox" name="service-options" value="1" id="option_type">
+                                                        <label for="option_type"></label>
+
+                                                    </div>
+
+                                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                                        <span>Копченая</span>
+                                                    </div>
+
+                                                    <div class="checkbox" style="width: 30px; float: left;">
+                                                        <input type="checkbox" name="service-options" value="1" id="type-1-2">
+                                                        <label for="type-1-2"></label>
+
+                                                    </div>
+
+                                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                                        <span>Сушеная</span>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                            <div class="options-2 clearfix" style="margin-top: 0;">
+
+                                                <div>
+
+                                                    <div style="width: 250px; margin: 20px auto 0;">
+
+                                                        <div>
+                                                            <div class="service-name" style="width: 100px; float:left; margin: 0">
+                                                                <span>Производитель:</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div style="width: 70px; float:left; ">
+                                                            <select>
+                                                                <option value="0">Не имеет значения</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="options-2 clearfix" style="margin-top: 0;">
+
+                                                <div>
+
+                                                    <div style="width: 250px; margin: 20px auto 0;">
+
+                                                        <div class="service-name" style="width: 100px; float:left; margin: 0">
+                                                            <span>Цена, кг:</span>
+                                                        </div>
+                                                        <div class="inputs clearfix">
+
+                                                            <input type="text" value="" placeholder="от" />
+                                                            <input type="text" value="" placeholder="до" />
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div style="width: 120px; margin: 20px auto; ">
+
+                                                <button class="btn" type="submit">Показать</button>
+
+                                            </div>
+
+
+                                            <!--Тушки-->
+                                            <!--Филе-->
+                                            <!--Свежая-->
+                                            <!--Мороженая-->
+                                            <!--Копченая-->
+                                            <!--Сушеная-->
 
                                         </div>
 
                                     </div>
 
-                                </div>
+                                    <!--<div class="options-2 clearfix">-->
+
+                                    <!--<div class="row">-->
+
+                                    <!--<div class="col-md-12 clearfix">-->
+
+                                    <!--<div class="service-option col-md-3 col-sm-6 col-xs-6 text-md-right text-sm-left text-xs-left text-xs-left clearfix">-->
+                                    <!--<div class="service-name text-sm-left text-xs-center text-md-right text-xs-left">-->
+                                    <!--<span>Производитель:</span>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+
+                                    <!--<div class="service-option col-md-3 col-sm-6 col-xs-6 text-sm-right text-xs-center clearfix">-->
+                                    <!--<select>-->
+                                    <!--<option value="0">Не имеет значения</option>-->
+                                    <!--</select>-->
+                                    <!--</div>-->
+
+                                    <!--<div class="service-option col-md-6 col-sm-12 col-xs-12 lines-wrapper clearfix">-->
+
+                                    <!--<div class="service-option-inputs">-->
+
+                                    <!--<div class="service-name service-name-inputs">-->
+                                    <!--<span>Цена, кг:</span>-->
+                                    <!--</div>-->
+                                    <!--<div class="inputs clearfix">-->
+
+                                    <!--<input type="text" value="" placeholder="от" />-->
+                                    <!--<input type="text" value="" placeholder="до" />-->
+                                    <!--<button class="btn" type="submit">Показать</button>-->
+                                    <!--</div>-->
+
+                                    <!--</div>-->
+
+                                    <!--&lt;!&ndash;<div class="service-option">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+                                    <!--</div>-->
+
+                                    <!--</div>-->
+
+                                    <!--</div>-->
 
 
-                            </div>
+                                    <!--</div>-->
+
+
+                        </div>
 
                         </form>
+
                     </div>
-                </div>
+
         </div>
     </div>
 
     <div class="home-products-categories-list container clearfix">
 
-        <div class="product-category col-md-3 col-sm-6 col-xs-12  clearfix">
+        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
 
             <div class="category-image">
                 <div class="image"><img src="resources/images/meat.png" alt="" /></div>
@@ -251,7 +433,7 @@
 
         </div>
 
-        <div class="product-category col-md-3 col-sm-6 col-xs-12  clearfix">
+        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
 
             <div class="category-image">
                 <div class="image"><img src="resources/images/bird.png" alt="" /></div>
@@ -270,7 +452,7 @@
 
         </div>
 
-        <div class="product-category col-md-3 col-sm-6 col-xs-12  clearfix">
+        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
 
             <div class="category-image">
                 <div class="image"><img src="resources/images/fish.png" alt="" /></div>
@@ -289,7 +471,7 @@
 
         </div>
 
-        <div class="product-category col-md-3 col-sm-6 col-xs-12  clearfix">
+        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
 
             <div class="category-image">
                 <div class="image"><img src="resources/images/meat.png" alt="" /></div>
@@ -308,7 +490,7 @@
 
         </div>
 
-        <div class="product-category col-md-3 col-sm-6 col-xs-12  clearfix">
+        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
 
             <div class="category-image">
                 <div class="image"><img src="resources/images/meat.png" alt="" /></div>
@@ -327,7 +509,7 @@
 
         </div>
 
-        <div class="product-category col-md-3 col-sm-6 col-xs-12  clearfix">
+        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
 
             <div class="category-image">
                 <div class="image"><img src="resources/images/milk.png" alt="" /></div>
@@ -346,7 +528,7 @@
 
         </div>
 
-        <div class="product-category col-md-3 col-sm-6 col-xs-12  clearfix">
+        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
 
             <div class="category-image">
                 <div class="image"><img src="resources/images/meat.png" alt="" /></div>
@@ -365,7 +547,7 @@
 
         </div>
 
-        <div class="product-category col-md-3 col-sm-6 col-xs-12  clearfix">
+        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
 
             <div class="category-image">
                 <div class="image"><img src="resources/images/corn.png" alt="" /></div>
@@ -394,7 +576,7 @@
 
     <div class="home-products-categories-list container clearfix">
 
-        <div class="product-category col-md-3 col-sm-6 col-xs-12  clearfix">
+        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
 
             <div class="category-image">
                 <div class="image"><img src="resources/images/meat.png" alt="" /></div>
@@ -413,7 +595,7 @@
 
         </div>
 
-        <div class="product-category col-md-3 col-sm-6 col-xs-12  clearfix">
+        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
 
             <div class="category-image">
                 <div class="image"><img src="resources/images/meat.png" alt="" /></div>
@@ -432,7 +614,7 @@
 
         </div>
 
-        <div class="product-category col-md-3 col-sm-6 col-xs-12  clearfix">
+        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
 
             <div class="category-image">
                 <div class="image"><img src="resources/images/corn.png" alt="" /></div>
@@ -451,7 +633,7 @@
 
         </div>
 
-        <div class="product-category col-md-3 col-sm-6 col-xs-12  clearfix">
+        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
 
             <div class="category-image">
                 <div class="image"><img src="resources/images/corn.png" alt="" /></div>
@@ -470,7 +652,7 @@
 
         </div>
 
-        <div class="product-category col-md-3 col-sm-6 col-xs-12  clearfix">
+        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
 
             <div class="category-image">
                 <div class="image"><img src="resources/images/corn.png" alt="" /></div>
@@ -489,7 +671,7 @@
 
         </div>
 
-        <div class="product-category col-md-3 col-sm-6 col-xs-12  clearfix">
+        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
 
             <div class="category-image">
                 <div class="image"><img src="resources/images/corn.png" alt="" /></div>
@@ -508,7 +690,7 @@
 
         </div>
 
-        <div class="product-category col-md-3 col-sm-6 col-xs-12  clearfix">
+        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
 
             <div class="category-image">
                 <div class="image"><img src="resources/images/corn.png" alt="" /></div>
@@ -527,7 +709,7 @@
 
         </div>
 
-        <div class="product-category col-md-3 col-sm-6 col-xs-12  clearfix">
+        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
 
             <div class="category-image">
                 <div class="image"><img src="resources/images/corn.png" alt="" /></div>
@@ -562,7 +744,7 @@
 
                 <div class="block-link-all col-md-6 col-sm-6 text-right clearfix">
 
-                    <a href="#"><span>Все предложения</span>&nbsp;<img src="resources/images/right_arrow.png" alt="" /></a>
+                    <a href="card_product.html" class="hidden-xs"><span>Все предложения</span>&nbsp;<img src="resources/images/right_arrow.png" alt="" /></a>
 
                 </div>
 
@@ -580,7 +762,7 @@
 
                         <div class="text">
 
-                            <div class="description"><a href="#">Фланец 51-4913-А кардана ГАЗ-53.</a></div>
+                            <div class="description"><a href="card_product.html">Фланец 51-4913-А кардана ГАЗ-53.</a></div>
                             <div class="date">10 октября в 17:00</div>
 
                         </div>
@@ -589,7 +771,7 @@
 
                 </div>
 
-                <div class="col-md-4 clearfix">
+                <div class="col-md-4 clearfix hidden-xs hidden-sm">
 
                     <div class="advertision-item">
 
@@ -599,7 +781,7 @@
 
                         <div class="text">
 
-                            <div class="description"><a href="#">Фланец 51-4913-А кардана ГАЗ-53.</a></div>
+                            <div class="description"><a href="card_product.html">Фланец 51-4913-А кардана ГАЗ-53.</a></div>
                             <div class="date">10 октября в 17:00</div>
 
                         </div>
@@ -608,7 +790,7 @@
 
                 </div>
 
-                <div class="col-md-4 clearfix">
+                <div class="col-md-4 clearfix hidden-xs hidden-sm">
 
                     <div class="advertision-item">
 
@@ -618,7 +800,7 @@
 
                         <div class="text">
 
-                            <div class="description"><a href="#">Фланец 51-4913-А кардана ГАЗ-53.</a></div>
+                            <div class="description"><a href="card_product.html">Фланец 51-4913-А кардана ГАЗ-53.</a></div>
                             <div class="date">10 октября в 17:00</div>
 
                         </div>
@@ -807,7 +989,7 @@
                         </div>
                     </div>
                     <div class="col-md-1 text-right">
-                        <a href="javascript:void(0);" class="up-arrow"><img src="resources/images/arrow.jpg" alt="UP" /></a>
+                        <a href="javascript:void(0);" id="go-to-top" class="up-arrow"><img src="resources/images/arrow.jpg" alt="UP" /></a>
                     </div>
                 </div>
             </div>

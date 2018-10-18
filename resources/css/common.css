@@ -81,6 +81,32 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+.underline-links a {
+  border-bottom: 1px solid #e6e6e6;
+}
+ul.tabs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.tabs li {
+  background: none;
+  color: #222;
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: "Roboto Light";
+  font-weight: normal;
+}
+.tab-content {
+  display: none;
+  background: #f6f6f6;
+  padding: 15px;
+}
+.tab-content.current {
+  display: inherit;
+}
 .flex-wrap {
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
@@ -108,6 +134,16 @@ body {
   border: 1px solid #a1eacb;
   background: #FFFFFF;
   padding: 10px 20px;
+}
+button.btn-green {
+  font-size: 15px;
+  border: 1px solid #a1eacb;
+  color: #FFFFFF;
+  background: #01d185;
+  padding: 12px 30px;
+}
+button.btn-green a {
+  color: #FFFFFF;
 }
 header {
   font-family: 'Roboto Light', sans-serif;
@@ -249,23 +285,29 @@ header .login button {
   color: #000000;
   float: right;
   margin-top: 8px;
-}
-.mobile-bars > span {
-  display: none;
-  float: right;
-}
-.mobile-bars .bars {
-  float: left;
-  margin-right: 15px;
-}
-.mobile-bars .bars span {
-  display: block;
-  width: 45px;
-  height: 6px;
-  background: #000000;
-}
-.mobile-bars .bars span + span {
-  margin-top: 6px;
+  background: url(../images/menu.png) no-repeat;
+  width: 42px;
+  height: 40px;
+  background-size: 42px 40px;
+  /*
+    >span {
+        display: none;
+        float: right;
+    }
+    .bars {
+        float: left;
+        margin-right: 15px;
+        span {
+            display: block;
+            width: 45px;
+            height: 6px;
+            background: @color_main_text;
+            &+span {
+                margin-top: 6px;
+            }
+        }
+    }
+    */
 }
 .header-content {
   background: url(../images/header_bg.jpg) repeat-y top center;
@@ -523,6 +565,10 @@ footer .copyright-text-socials .socials {
 }
 footer .copyright-text-socials .socials li {
   padding-right: 12px;
+}
+footer .copyright-text-socials .socials li img {
+  width: 29px;
+  height: 29px;
 }
 .checkbox {
   float: left;
