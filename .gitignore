@@ -1,0 +1,5 @@
+# add special rule for empty folder - must place .gitkeep file in empty folder
+!.gitkeep
+
+# ignore PhpStorm-IDE settings folder
+/.idea
