@@ -39,7 +39,7 @@ body {
     font-family: @font_family_roboto;
     font-size: 14px;
     color: @color_main_text;
-    min-width: 600px;
+    min-width: 480px;
 }
 
 .btn.full {
@@ -333,7 +333,7 @@ header {
 }
 
 .header-content {
-    background: url(../images/header_bg.jpg) no-repeat top center;
+    background: url(../images/header_bg.jpg) repeat-y top center;
     padding-bottom: 60px;
 
     h2 {
@@ -532,27 +532,7 @@ header {
 
             }
 
-            &:hover {
 
-                border: 5px solid @color_main_green;
-                color: @color_white;
-
-                .text {
-                    background: @color_main_green;
-
-                    .description {
-                        a {
-                            color: @color_white;
-                            border-bottom: 1px solid #1ad591;
-                        }
-                    }
-
-                    .date {
-                        border-top: 1px solid #02c47d;
-                    }
-                }
-
-            }
 
         }
 
@@ -599,27 +579,6 @@ header {
                 margin-bottom: 40px;
                 display: block;
                 padding: 30px 15px 30px 15px;
-
-                &:hover {
-
-                    color: @color_white;
-
-                    background: url(../images/news_item_bg.jpg) no-repeat center;
-
-                    .news-description {
-
-                        span {
-                            border-bottom: none;
-                        }
-                    }
-
-                    .more {
-
-                        span {
-                            border-bottom: none;
-                        }
-                    }
-                }
 
                 .news-date {
                     font-size: 13px;

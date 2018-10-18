@@ -28,7 +28,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   color: #000000;
-  min-width: 600px;
+  min-width: 480px;
 }
 .btn.full {
   width: 100%;
@@ -268,7 +268,7 @@ header .login button {
   margin-top: 6px;
 }
 .header-content {
-  background: url(../images/header_bg.jpg) no-repeat top center;
+  background: url(../images/header_bg.jpg) repeat-y top center;
   padding-bottom: 60px;
 }
 .header-content h2 {
@@ -405,20 +405,6 @@ header .login button {
   border-top: 1px solid #fbfbfb;
   font-size: 11px;
 }
-.home-advertision .advertision-list .advertision-item:hover {
-  border: 5px solid #01d185;
-  color: #FFFFFF;
-}
-.home-advertision .advertision-list .advertision-item:hover .text {
-  background: #01d185;
-}
-.home-advertision .advertision-list .advertision-item:hover .text .description a {
-  color: #FFFFFF;
-  border-bottom: 1px solid #1ad591;
-}
-.home-advertision .advertision-list .advertision-item:hover .text .date {
-  border-top: 1px solid #02c47d;
-}
 .home-info {
   padding-top: 50px;
 }
@@ -443,16 +429,6 @@ header .login button {
   margin-bottom: 40px;
   display: block;
   padding: 30px 15px 30px 15px;
-}
-.home-info .news-info .news-list .news-item:hover {
-  color: #FFFFFF;
-  background: url(../images/news_item_bg.jpg) no-repeat center;
-}
-.home-info .news-info .news-list .news-item:hover .news-description span {
-  border-bottom: none;
-}
-.home-info .news-info .news-list .news-item:hover .more span {
-  border-bottom: none;
 }
 .home-info .news-info .news-list .news-item .news-date {
   font-size: 13px;
