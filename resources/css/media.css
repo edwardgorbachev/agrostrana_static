@@ -8,9 +8,6 @@
   .text-sm-left {
     text-align: left;
   }
-  .text-sm-center {
-    text-align: center;
-  }
   .show-xs {
     display: none;
   }
@@ -71,6 +68,9 @@
   }
 }
 @media all and (max-width: 1199px) {
+  .product-card-main-photo img {
+    width: 300px !important;
+  }
   .footer-contacts .btn {
     margin: 0;
   }
@@ -89,6 +89,9 @@
 @media all and (max-width: 991px) {
   .show-sm {
     display: block;
+  }
+  .text-sm-center {
+    text-align: center;
   }
   footer {
     text-align: center;
