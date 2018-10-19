@@ -663,7 +663,8 @@ footer .up-arrow img {
 .checkbox input[type='radio'],
 .checkbox input[type='checkbox'] {
   position: absolute;
-  visibility: hidden;
+  visibility: visible;
+  border: 1px solid #F00;
 }
 .checkbox input[type='radio']:checked ~ label:before {
   background: #203a9a none;
