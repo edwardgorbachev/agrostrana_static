@@ -100,7 +100,6 @@ $(function() {
 
     $(document).on('click', function(){
         $('.pop').hide();
-        return false;
     });
 
     // $(document).on('click', function(){
