@@ -6,12 +6,28 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="resources/css/bootstrap.css" rel="stylesheet">
+    <script>
+        function moreAction() {
+            if ($(".more-action").hasClass("hidden-sm")) {
+                $(".more-action").removeClass("hidden-sm")
+                $("#moreTitle").text("Свернуть")
+                $("#moreIcon").text("arrow_drop_up")
+            } else {
+                $(".more-action").addClass("hidden-sm")
+                $("#moreTitle").text("Развернуть")
+                $("#moreIcon").text("arrow_drop_down")
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="resources/css/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="resources/css/slick.css" rel="stylesheet">
     <script type="text/javascript" src="resources/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="resources/js/slick.min.js"></script>
     <script type="text/javascript" src="resources/js/main.js"></script>
+    <script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
 </head>
 <body class="card-product">
 
@@ -81,50 +97,50 @@
 
         <li>
             <div class="category-image">
-            <div class="image"><img src="resources/images/svg/res/feed.svg" alt=""/></div>
+                <div class="image"><img src="resources/images/svg/res/feed.svg" alt=""/></div>
             </div>
             <div class="name"><a href="#">Корма</a></div>
         </li>
 
         <li>
             <div class="category-image">
-            <div class="image"><img src="resources/images/svg/res/nuts.svg" alt=""/></div>
+                <div class="image"><img src="resources/images/svg/res/nuts.svg" alt=""/></div>
             </div>
             <div class="name"><a href="#">Орехи</a></div>
         </li>
         <li>
             <div class="category-image">
-            <div class="image"><img src="resources/images/svg/res/mushrooms.svg" alt=""/></div>
+                <div class="image"><img src="resources/images/svg/res/mushrooms.svg" alt=""/></div>
             </div>
             <div class="name"><a href="#">Грибы</a></div>
         </li>
         <li>
             <div class="category-image">
-            <div class="image"><img src="resources/images/svg/res/seed.svg" alt=""/></div>
+                <div class="image"><img src="resources/images/svg/res/seed.svg" alt=""/></div>
             </div>
             <div class="name"><a href="#">Семена и саженцы</a></div>
         </li>
         <li>
             <div class="category-image">
-            <div class="image"><img src="resources/images/svg/res/box.svg" alt=""/></div>
+                <div class="image"><img src="resources/images/svg/res/box.svg" alt=""/></div>
             </div>
             <div class="name"><a href="#">Упаковка</a></div>
         </li>
         <li>
             <div class="category-image">
-            <div class="image"><img src="resources/images/svg/res/chemistry.svg" alt=""/></div>
+                <div class="image"><img src="resources/images/svg/res/chemistry.svg" alt=""/></div>
             </div>
             <div class="name"><a href="#">Агрохимия</a></div>
         </li>
         <li>
             <div class="category-image">
-            <div class="image"><img src="resources/images/svg/res/tractor.svg" alt=""/></div>
+                <div class="image"><img src="resources/images/svg/res/tractor.svg" alt=""/></div>
             </div>
             <div class="name"><a href="#">Техника</a></div>
         </li>
         <li>
             <div class="category-image">
-            <div class="image"><img src="resources/images/svg/res/freeze.svg" alt=""/></div>
+                <div class="image"><img src="resources/images/svg/res/freeze.svg" alt=""/></div>
             </div>
             <div class="name"><a href="#">Оборудование для <span class="nowrap">с/х</span></a></div>
         </li>
@@ -132,48 +148,62 @@
     </ul>
 </div>
 
-<div class="mobile">
-    <a href="javascript:void(0);" class="mobile-bars clearfix"></a>
-    <a href="#">Объявления</a>
-    <a href="#">Новости</a>
-    <a href="#">Войти</a>
-</div>
-
 <div class="header-wrapper">
     <header>
-        <div class="menu-wrapper">
+        <div class="menu-wrapper clearfix">
+            <nav class="mobile-menu d-lg-none ">
+                <div class="hamburger">
+                    <a href="javascript:void(0);" class="mobile-bars">
+                        <div class="bars">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="burger-title" >Каталог</span>
+                    </a>
+                </div>
+                <ul class="list-inline">
+                    <li><a href="#">Объявления</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Войти</a></li>
+                </ul>
+            </nav>
             <div class="container">
                 <div class="row">
+
                     <div class="col-xs-12 clearfix">
 
-                        <div class="logo pull-left">
-                            <a href="index.html">
-                                <img class="img-responsive" src="resources/images/logo.png" alt="Logo">
-                                <span>Агространа</span>
-                            </a>
-                        </div>
 
-
-                        <ul class="main-menu pull-left">
-                            <li class="mobile-close mobile"><a href="javascript:void(0);">закрыть</a></li>
-                            <li><a href="card_product.html">Объявления</a></li>
-                            <li><a href="news.html">Новости</a></li>
-                            <li><a href="javascript:void(0);">Фото и видео</a></li>
-                            <li class="mobile-logo mobile">
-                                <a href="index.html">
-                                    <img class="img-responsive" src="resources/images/logo.png" alt="Logo">
-                                </a>
-                            </li>
-                        </ul>
-
-                        <div class="login text-md-center pull-right hidden-sm">
-                            <a href="#">Вход/Регистрация</a>
-                            <button>Разместить</button>
-                        </div>
-                    </div>
+                <div class="logo pull-left">
+                    <a href="index.html">
+                        <img class="img-responsive" src="resources/images/svg/res/logo.svg" alt="Logo">
+                        <span>Агространа</span>
+                    </a>
                 </div>
-            </div>
+                <ul class="main-menu pull-left">
+                    <li class="mobile-close mobile"><a href="javascript:void(0);">закрыть</a></li>
+                    <li><a href="card_product.html">Объявления</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="javascript:void(0);">Фото и видео</a></li>
+                    <li class="mobile-logo mobile">
+                        <a href="index.html">
+                            <img class="img-responsive" src="resources/images/logo.png" alt="Logo">
+                        </a>
+                    </li>
+                </ul>
+
+
+                <div class="place text-md-center pull-right">
+                    <button>Разместить</button>
+                </div>
+
+                <div class="login text-md-center pull-right d-none d-lg-block">
+                    <a class=href="#">Вход/Регистрация</a>
+                </div>
+
+        </div>        
         </div>
+        </div>
+        </div>
+
     </header>
 
     <div class="header-content">
@@ -187,13 +217,11 @@
                 <form action="">
 
                     <div class="row search-fields-wrapper">
-
-                        <div class="col-md-2 hidden-sm hidden-xs catalogue-link">
+                        <div class="col-xs-2 hidden-sm hidden-xs catalogue-link">
                             <a href="#">Каталог</a>
                         </div>
-
                         <div class="col-xs-8"><input type="text" name="q" placeholder="Что ищем?"/></div>
-                        <div class="col-md-1 text-xs-center text-sm-center">
+                        <div class="col-xs-2">
                             <button class="btn search-btn" type="submit">Найти</button>
                         </div>
                     </div>
@@ -307,172 +335,136 @@
 
 
                     <!-- ФИЛЬТРЫ ДЛЯ МАЛЕНЬКОГО ЭКРАНА -->
-                    <div class="show-xs show-sm" style="margin-left: 40px; margin-top: 50px;">
+                    <div class="show-sm col-xs-12 flex-center">
+                        <ul class="list-inline">
+                            <li class="col-4" style="float: left;"><hr style="background-color: #FFFFFF;"/></li>
+                            <li style="float: left; padding-top: 5px"><a onclick="moreAction()" id="moreTitle" href="#" style="min-width: 80px; color: #FFFFFF;"> Развернуть</a></li>
+                            <li style="float: left; padding-top: 5px"><a id="moreIcon" style="color: #FFFFFF" class="material-icons">arrow_drop_down</a></li>
+                            <li class="col-4" style="float: left"><hr style="background-color: #FFFFFF;"/></li>
+                        </ul>
+                    </div>
+                    <div class="more-action hidden-sm">
+                        <div class="show-xs show-sm" style="margin-left: 40px; margin-top: 50px;">
 
-                        <div class="clearfix">
+                            <div class="clearfix">
+                                <div class="type">
+                                    <div style="width: 200px; margin: 0 auto;" class="clearfix">
+                                        <div class="checkbox" style="width: 30px; float: left;">
+                                            <input type="checkbox" name="service-options" value="1" id="test">
+                                            <label for="test"></label>
 
-                            <div class="type">
+                                        </div>
+                                        <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                            <span>Морская</span>
+                                        </div>
+                                        <div class="checkbox" style="width: 30px; float: left;">
+                                            <input type="checkbox" name="service-options" value="1" id="test2">
+                                            <label for="test2"></label>
 
-                                <div style="width: 200px; margin: 0 auto;" class="clearfix">
-
-                                    <div class="checkbox" style="width: 30px; float: left;">
-                                        <input type="checkbox" name="service-options" value="1" id="test">
-                                        <label for="test"></label>
-
+                                        </div>
+                                        <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                            <span>Речная</span>
+                                        </div>
                                     </div>
 
-                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
-                                        <span>Морская</span>
+                                    <div style="width: 200px; margin: 20px auto 0;" class="clearfix">
+                                        <div class="checkbox" style="width: 30px; float: left;">
+                                            <input type="radio" name="service-options" value="1" id="test3">
+                                            <label for="test3"></label>
+                                        </div>
+                                        <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                            <span>Тушки</span>
+                                        </div>
+                                        <div class="checkbox" style="width: 30px; float: left;">
+                                            <input type="radio" name="service-options" value="1" id="test4">
+                                            <label for="test4"></label>
+                                        </div>
+                                        <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                            <span>Филе</span>
+                                        </div>
                                     </div>
 
-                                    <div class="checkbox" style="width: 30px; float: left;">
-                                        <input type="checkbox" name="service-options" value="1" id="test2">
-                                        <label for="test2"></label>
+                                    <div style="width: 200px; margin: 20px auto 0;" class="clearfix">
+                                        <div class="checkbox" style="width: 30px; float: left;">
+                                            <input type="checkbox" name="service-options" value="1" id="test5">
+                                            <label for="test5"></label>
+                                        </div>
+                                        <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                            <span>Свежая</span>
+                                        </div>
+                                        <div class="checkbox" style="width: 30px; float: left;">
+                                            <input type="checkbox" name="service-options" value="1" id="test6">
+                                            <label for="test6"></label>
 
+                                        </div>
+                                        <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                            <span>Мороженая</span>
+                                        </div>
                                     </div>
 
-                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
-                                        <span>Речная</span>
+                                    <div style="width: 200px; margin: 20px auto 0;" class="clearfix">
+                                        <div class="checkbox" style="width: 30px; float: left;">
+                                            <input type="checkbox" name="service-options" value="1" id="test7">
+                                            <label for="test7"></label>
+                                        </div>
+                                        <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                            <span>Копченая</span>
+                                        </div>
+                                        <div class="checkbox" style="width: 30px; float: left;">
+                                            <input type="checkbox" name="service-options" value="1" id="test8">
+                                            <label for="test8"></label>
+                                        </div>
+                                        <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                            <span>Сушеная</span>
+                                        </div>
                                     </div>
-
                                 </div>
 
-                                <div style="width: 200px; margin: 20px auto 0;" class="clearfix">
 
-                                    <div class="checkbox" style="width: 30px; float: left;">
-                                        <input type="radio" name="service-options" value="1" id="test3">
-                                        <label for="test3"></label>
-
-                                    </div>
-
-                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
-                                        <span>Тушки</span>
-                                    </div>
-
-                                    <div class="checkbox" style="width: 30px; float: left;">
-                                        <input type="radio" name="service-options" value="1" id="test4">
-                                        <label for="test4"></label>
-
-                                    </div>
-
-                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
-                                        <span>Филе</span>
-                                    </div>
-
-                                </div>
-
-                                <div style="width: 200px; margin: 20px auto 0;" class="clearfix">
-
-                                    <div class="checkbox" style="width: 30px; float: left;">
-                                        <input type="checkbox" name="service-options" value="1" id="test5">
-                                        <label for="test5"></label>
-
-                                    </div>
-
-                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
-                                        <span>Свежая</span>
-                                    </div>
-
-                                    <div class="checkbox" style="width: 30px; float: left;">
-                                        <input type="checkbox" name="service-options" value="1" id="test6">
-                                        <label for="test6"></label>
-
-                                    </div>
-
-                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
-                                        <span>Мороженая</span>
-                                    </div>
-
-                                </div>
-
-                                <div style="width: 200px; margin: 20px auto 0;" class="clearfix">
-
-                                    <div class="checkbox" style="width: 30px; float: left;">
-                                        <input type="checkbox" name="service-options" value="1" id="test7">
-                                        <label for="test7"></label>
-
-                                    </div>
-
-                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
-                                        <span>Копченая</span>
-                                    </div>
-
-                                    <div class="checkbox" style="width: 30px; float: left;">
-                                        <input type="checkbox" name="service-options" value="1" id="test8">
-                                        <label for="test8"></label>
-
-                                    </div>
-
-                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
-                                        <span>Сушеная</span>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="options-2 clearfix" style="margin-top: 0;">
-
-                                <div>
-
-                                    <div style="width: 250px; margin: 20px auto 0;">
-
-                                        <div>
-                                            <div class="service-name" style="width: 100px; float:left; margin: 0">
-                                                <span>Производитель:</span>
+                                <div class="options-2 clearfix" style="margin-top: 0;">
+                                    <div>
+                                        <div style="width: 250px; margin: 20px auto 0;">
+                                            <div>
+                                                <div class="service-name" style="width: 100px; float:left; margin: 0">
+                                                    <span>Производитель:</span>
+                                                </div>
+                                            </div>
+                                            <div style="width: 70px; float:left; ">
+                                                <select>
+                                                    <option value="0">Не имеет значения</option>
+                                                </select>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
 
-                                        <div style="width: 70px; float:left; ">
-                                            <select>
-                                                <option value="0">Не имеет значения</option>
-                                            </select>
+                                <div class="options-2 clearfix" style="margin-top: 0;">
+                                    <div>
+                                        <div style="width: 250px; margin: 20px auto 0;">
+                                            <div class="service-name" style="width: 100px; float:left; margin: 0">
+                                                <span>Цена, кг:</span>
+                                            </div>
+                                            <div class="inputs clearfix">
+                                                <input type="text" value="" placeholder="от"/>
+                                                <input type="text" value="" placeholder="до"/>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                            </div>
-
-                            <div class="options-2 clearfix" style="margin-top: 0;">
-
-                                <div>
-
-                                    <div style="width: 250px; margin: 20px auto 0;">
-
-                                        <div class="service-name" style="width: 100px; float:left; margin: 0">
-                                            <span>Цена, кг:</span>
-                                        </div>
-                                        <div class="inputs clearfix">
-
-                                            <input type="text" value="" placeholder="от"/>
-                                            <input type="text" value="" placeholder="до"/>
-                                        </div>
-
-                                    </div>
-
+                                <div style="width: 120px; margin: 20px auto; ">
+                                    <button class="btn" type="submit">Показать</button>
                                 </div>
 
+                                <!--Тушки-->
+                                <!--Филе-->
+                                <!--Свежая-->
+                                <!--Мороженая-->
+                                <!--Копченая-->
+                                <!--Сушеная-->
                             </div>
-
-                            <div style="width: 120px; margin: 20px auto; ">
-
-                                <button class="btn" type="submit">Показать</button>
-
-                            </div>
-
-
-                            <!--Тушки-->
-                            <!--Филе-->
-                            <!--Свежая-->
-                            <!--Мороженая-->
-                            <!--Копченая-->
-                            <!--Сушеная-->
-
                         </div>
-
                     </div>
-
                 </form>
             </div>
         </div>
@@ -747,7 +739,7 @@
 
             </div>
 
-            <div class="block-link-all col-md-6 col-sm-6 text-right hidden-xs clearfix">
+            <div class="block-link-all col-md-6 col-sm-6 text-right hidden-xs hidden-sm clearfix">
 
                 <a href="card_product.html"><span>Все предложения</span>&nbsp;<img
                         src="resources/images/right_arrow.png" alt=""/></a>
@@ -759,23 +751,16 @@
         <div class="advertision-list">
 
             <div class="col-md-4 clearfix">
-
-                <div class="advertision-item">
-
+                <div class="advertision-item-action">
                     <div class="image">
                         <img src="resources/images/adv_image_1.jpg" alt=""/>
                     </div>
-
                     <div class="text">
-
                         <div class="description"><a href="card_product.html">Запчасти к тюковым пресс-подборщикам
                             <!--ПТ-165М--></a></div>
                         <div class="date">10 октября в 17:00</div>
-
                     </div>
-
                 </div>
-
             </div>
 
             <div class="col-md-4 clearfix hidden-xs hidden-sm">
@@ -870,6 +855,5 @@
     </div>
 
 </footer>
-
 </body>
 </html>

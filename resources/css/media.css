@@ -159,7 +159,7 @@
     display: none;
   }
   header .menu-wrapper {
-    padding-top: 35px;
+    padding-top: 15px;
   }
   header .main-menu {
     opacity: 0;
@@ -201,13 +201,13 @@
     cursor: default;
     line-height: 1;
     display: none;
-    margin-top: 15px;
+    margin-top: 54px;
     position: absolute;
     text-align: left;
     width: 400px;
     height: 600px;
     left: 0;
-    margin-left: 20px;
+    margin-left: 10px;
     z-index: 50;
     padding: 25px 25px 20px;
   }
@@ -287,5 +287,28 @@
   h6 {
     font-size: 14px;
   }
+}
+@media all and (max-width: 430px) {
+  
+	.mobile-menu .list-inline > li {
+		padding: 0 5px 0 5px;
+	}
+    .burger-title {
+        display: none;
+    }
+	
+}
+@media all and (max-width: 430px) {
+  
+	.mobile-menu .list-inline > li {
+		padding: 0 5px 0 5px;
+	}
+    .burger-title {
+        display: none;
+    }
+	header .place button {
+		margin: 0 5px 0 5px;
+        padding: 12px 20px;
+	}
 }
 /*# sourceMappingURL=media.css.map */
