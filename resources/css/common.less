@@ -1,8 +1,9 @@
 @color_main_text: #000000;
-@color_link_hover: #999999;
+@color_link_hover: #01d185;
 @color_link_underline: #e6e6e6;
 @color_white: #FFFFFF;
 @color_main_green: #01d185;
+@color_main_green_hover: #0fc8d1;
 @font_family_roboto: 'Roboto', sans-serif;
 @font_family_roboto_thin: 'Roboto Thin', sans-serif;
 @font_family_roboto_light: 'Roboto Light', sans-serif;
@@ -18,6 +19,7 @@ a {
     text-decoration: none;
     &:hover {
         text-decoration: none;
+        color:@color_link_hover;
     }
     &:focus {
         text-decoration: none;
@@ -39,7 +41,7 @@ body {
     font-family: @font_family_roboto;
     font-size: 14px;
     color: @color_main_text;
-    min-width: 480px;
+    min-width: 360px;
 }
 
 .btn.full {
@@ -184,6 +186,10 @@ button.btn-green {
     }
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
 header {
 
     font-family: @font_family_roboto_light;
@@ -197,6 +203,11 @@ header {
             text-decoration: none;
             display: block;
             line-height: 42px;
+
+            img {
+                width: 42px;
+                height: 42px;
+            }
 
             span {
                 font-size: 18px;
@@ -236,7 +247,7 @@ header {
         li:nth-child(2) {
 
             &:before {
-                background: url(../images/adv.png) no-repeat;
+                background: url(../images/svg/toper_anonce.svg) no-repeat;
                 width: 21px;
                 height: 12px;
                 display: block;
@@ -249,13 +260,13 @@ header {
         }
 
         li:nth-child(3):before {
-            background: url(../images/news.png) no-repeat;
+            background: url(../images/svg/toper_news.svg) no-repeat;
             width: 14px;
             height: 14px;
         }
 
         li:nth-child(4):before {
-            background: url(../images/photo.png) no-repeat;
+            background: url(../images/svg/toper_photo.svg) no-repeat;
             width: 14px;
             height: 14px;
         }
@@ -339,6 +350,16 @@ header {
     .login {
 
         font-size: 16px;
+
+        &:before {
+            background: url(../images/svg/toper_user.svg) no-repeat;
+            width: 14px;
+            height: 14px;
+            margin-top: 13px;
+            margin-left: -25px;
+            position: absolute;
+            content: " ";
+        }
 
         a {
             border-bottom: 1px solid @color_link_underline;
@@ -539,6 +560,11 @@ header {
                 a {
                     color: @color_main_green;
                     border-bottom: 1px solid @color_main_green;
+
+                    &:hover {
+                        color: @color_main_green_hover;
+                        border-bottom: 1px solid @color_main_green_hover;
+                    }
                 }
             }
         }
@@ -571,6 +597,10 @@ header {
 
     .advertision-list {
         margin-top: 40px;
+
+        .col-md-4 {
+            padding-right: 0;
+        }
 
         .advertision-item {
 
@@ -761,6 +791,8 @@ footer {
     .footer-logo {
         position: relative;
         top: -15px;
+        width: 42px;
+        height: 42px;
     }
 
     .copyright-text-socials {
@@ -788,6 +820,21 @@ footer {
     }
 
     .up-arrow {
+
+        background: #ededed;
+        width: 33px;
+        height: 33px;
+        border-radius: 100%;
+        display: inline-block;
+        position: relative;
+
+        img {
+            width: 6px;
+            height: 11px;
+            position: absolute;
+            top: 11px;
+            left: 14px;
+        }
     }
 }
 

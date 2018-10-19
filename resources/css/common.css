@@ -10,6 +10,7 @@ a {
 }
 a:hover {
   text-decoration: none;
+  color: #01d185;
 }
 a:focus {
   text-decoration: none;
@@ -28,7 +29,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   color: #000000;
-  min-width: 480px;
+  min-width: 360px;
 }
 .btn.full {
   width: 100%;
@@ -145,6 +146,9 @@ button.btn-green {
 button.btn-green a {
   color: #FFFFFF;
 }
+.nowrap {
+  white-space: nowrap;
+}
 header {
   font-family: 'Roboto Light', sans-serif;
 }
@@ -155,6 +159,10 @@ header .logo a {
   text-decoration: none;
   display: block;
   line-height: 42px;
+}
+header .logo a img {
+  width: 42px;
+  height: 42px;
 }
 header .logo a span {
   font-size: 18px;
@@ -187,7 +195,7 @@ header .main-menu li:before {
   content: " ";
 }
 header .main-menu li:nth-child(2):before {
-  background: url(../images/adv.png) no-repeat;
+  background: url(../images/svg/toper_anonce.svg) no-repeat;
   width: 21px;
   height: 12px;
   display: block;
@@ -196,20 +204,20 @@ header .main-menu li:nth-child(2) a {
   margin-left: 30px;
 }
 header .main-menu li:nth-child(3):before {
-  background: url(../images/news.png) no-repeat;
+  background: url(../images/svg/toper_news.svg) no-repeat;
   width: 14px;
   height: 14px;
 }
 header .main-menu li:nth-child(4):before {
-  background: url(../images/photo.png) no-repeat;
+  background: url(../images/svg/toper_photo.svg) no-repeat;
   width: 14px;
   height: 14px;
 }
 header .main-menu li:hover > a {
-  color: #999999;
+  color: #01d185;
 }
 header .main-menu .active > a {
-  color: #999999;
+  color: #01d185;
 }
 header .main-menu > li.mobile:hover > a {
   background: transparent;
@@ -267,6 +275,15 @@ header .main-menu li.mobile-close > a:hover {
 }
 header .login {
   font-size: 16px;
+}
+header .login:before {
+  background: url(../images/svg/toper_user.svg) no-repeat;
+  width: 14px;
+  height: 14px;
+  margin-top: 13px;
+  margin-left: -25px;
+  position: absolute;
+  content: " ";
 }
 header .login a {
   border-bottom: 1px solid #e6e6e6;
@@ -412,6 +429,10 @@ header .login button {
   color: #01d185;
   border-bottom: 1px solid #01d185;
 }
+.home-products-categories-list .product-category .products-list ul a:hover {
+  color: #0fc8d1;
+  border-bottom: 1px solid #0fc8d1;
+}
 .home-advertision {
   margin-top: 80px;
   padding: 40px 0 40px;
@@ -431,6 +452,9 @@ header .login button {
 }
 .home-advertision .advertision-list {
   margin-top: 40px;
+}
+.home-advertision .advertision-list .col-md-4 {
+  padding-right: 0;
 }
 .home-advertision .advertision-list .advertision-item {
   display: flex;
@@ -550,6 +574,8 @@ footer {
 footer .footer-logo {
   position: relative;
   top: -15px;
+  width: 42px;
+  height: 42px;
 }
 footer .copyright-text-socials {
   margin-top: 20px;
@@ -569,6 +595,21 @@ footer .copyright-text-socials .socials li {
 footer .copyright-text-socials .socials li img {
   width: 29px;
   height: 29px;
+}
+footer .up-arrow {
+  background: #ededed;
+  width: 33px;
+  height: 33px;
+  border-radius: 100%;
+  display: inline-block;
+  position: relative;
+}
+footer .up-arrow img {
+  width: 6px;
+  height: 11px;
+  position: absolute;
+  top: 11px;
+  left: 14px;
 }
 .checkbox {
   float: left;
