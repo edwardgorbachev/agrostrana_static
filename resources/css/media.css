@@ -67,7 +67,7 @@
   .home-info .news-info .news-list .news-item:hover .more span {
     border-bottom: none;
   }
-  .advertision-item-action {
+  .advertision-item.selected  {
     background: #01d185;
     display: flex;
     border: 5px solid #01d185;
@@ -88,14 +88,14 @@
     font-size: 11px;
   }
   .home-advertision .advertision-list .advertision-item:hover {
-    /*border: 5px solid #01d185;*/
+   border: 5px solid #01d185;*/
     /*color: #FFFFFF;*/
   }
   .home-advertision .advertision-list .advertision-item:hover .text {
     /*background: #01d185;*/
   }
   .home-advertision .advertision-list .advertision-item-action:hover .text .description a {
-    color: #FFFFFF;
+/*    color: #FFFFFF;*/
     /*border-bottom: 1px solid #1ad591;*/
   }
   .home-advertision .advertision-list .advertision-item:hover .text .date {
