@@ -899,12 +899,19 @@ footer {
     input[type='radio'],
     input[type='checkbox'] {
         position: absolute;
-        //visibility: hidden;
-        visibility: visible;
-        border: 1px solid #F00;
+        visibility: hidden;
     }
 
     input[type='radio']:checked ~ label:before {
+        background: #203a9a none;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    input[type='checkbox']:checked ~ label:before {
         background: #203a9a none;
         width: 20px;
         height: 20px;
@@ -929,7 +936,7 @@ footer {
         top: -4px;
     }
 
-    .checkbox label:before {
+    label:before {
         content: '';
         width: 100%;
         height: 100%;
@@ -937,15 +944,16 @@ footer {
         box-sizing: border-box;
     }
 
-    .checkbox input[type='radio']:checked ~ label:before {
-        background: url("../images/chbox-checked.jpg") no-repeat center/cover;
+    input[type='radio']:checked ~ label:before {
+        background: url("../images/radio-checked.png") no-repeat center/cover;
     }
 
-    .checkbox input[type='checkbox']:checked ~ label:before {
-        display: none;
+    input[type='checkbox']:checked ~ label:before {
+
         background: url("../images/chbox-checked.jpg") no-repeat center/cover;
     }
 }
+
 
 
 
