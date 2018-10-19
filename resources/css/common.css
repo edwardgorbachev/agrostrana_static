@@ -543,6 +543,8 @@ header .place button {
 .home-advertision .advertision-list .advertision-item {
   display: flex;
   border: 5px solid transparent;
+    overflow: hidden;
+    
 }
 .home-advertision .advertision-list .advertision-item .image {
   width: 125px;
@@ -576,7 +578,7 @@ header .place button {
     height: 125px;
   }
   .home-advertision .advertision-list .advertision-item.selected .text  {
-    background: #01d185;
+    background: transparent;
   }
 .home-advertision .advertision-list .advertision-item.selected .text .description a:hover {
     color:white;
