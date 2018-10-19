@@ -150,11 +150,20 @@ button.btn-green a {
 .nowrap {
   white-space: nowrap;
 }
+.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+
+    /* the rest of your styling */
+}
 header {
   font-family: 'Roboto Light', sans-serif;
 }
 header .menu-wrapper {
   padding-top: 20px;
+    max-width:970px;
+    margin:0 auto;
 }
 header .logo a {
   text-decoration: none;
@@ -282,32 +291,55 @@ header .login:before {
   background: url(../images/svg/toper_user.svg) no-repeat;
   width: 14px;
   height: 14px;
-  margin-top: 13px;
+  margin-top: 15px;
   margin-left: -25px;
   position: absolute;
   content: " ";
 }
 header .login a {
+    line-height: 43px;
   border-bottom: 1px solid #e6e6e6;
 }
-header .login button {
+header .place button {
   font-size: 15px;
   border: 1px solid #a1eacb;
   color: #FFFFFF;
   background: #01d185;
   padding: 12px 40px;
-  margin-left: 30px;
+  margin-left: 30px;  
+
+}
+.hamburger {
+    display: block;
+    float: left;
+}
+.mobile-menu {
+    padding:0 10px 10px 10px;
+    margin:0 0 20px 0;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+}
+.mobile-menu .list-inline {
+   display: inline-block;
+    height:40px;
+    line-height: 40px;
+    margin-left:20px;
+}
+.mobile-menu .list-inline > li {
+    padding: 0 10px 0 10px;
 }
 .mobile-bars {
   display: inline-block;
   font-size: 18px;
   color: #000000;
-  float: right;
-  margin-top: 8px;
+  float: none;
   background: url(../images/menu.png) no-repeat;
-  width: 42px;
+
   height: 40px;
   background-size: 42px 40px;
+    border:1px solid black;
+    min-width: 42px;
   /*
     >span {
         display: none;
@@ -327,6 +359,11 @@ header .login button {
         }
     }
     */
+}
+
+.mobile-bars .burger-title{
+    line-height:40px;
+    padding:0 10px 0 40px;;
 }
 .header-content {
   background: url(../images/header_bg.jpg) repeat-y top center;
