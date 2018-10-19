@@ -30,6 +30,7 @@ body {
   font-size: 14px;
   color: #000000;
   min-width: 360px;
+    line-height: 1;
 }
 .btn.full {
   width: 100%;
@@ -163,6 +164,7 @@ header .logo a {
 header .logo a img {
   width: 42px;
   height: 42px;
+  vertical-align:baseline;
 }
 header .logo a span {
   font-size: 18px;
@@ -373,6 +375,7 @@ header .login button {
   margin: 11px 0 0 10px;
   padding-left: 3px;
 }
+
 .top-search-form .city-place span {
   padding-left: 4px;
 }
@@ -382,8 +385,9 @@ header .login button {
   position: relative;
   top: 3px;
   left: 2px;
+    vertical-align: baseline;   
 }
-.top-search-form .city-place img.close {
+.top-search-form .city-place img.btn_remove {
   width: 9px;
   height: 9px;
   position: relative;
@@ -655,6 +659,9 @@ footer .up-arrow img {
   position: absolute;
   top: 11px;
   left: 14px;
+}
+footer .row {
+    display:block;
 }
 .checkbox {
   float: left;
