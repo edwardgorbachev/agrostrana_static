@@ -673,6 +673,14 @@ footer .up-arrow img {
   top: 0px;
   left: 0px;
 }
+.checkbox input[type='checkbox']:checked ~ label:before {
+  background: #203a9a none;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
 .checkbox input[type='radio'] ~ label {
   border-radius: 100%;
 }
@@ -687,18 +695,17 @@ footer .up-arrow img {
   position: relative;
   top: -4px;
 }
-.checkbox .checkbox label:before {
+.checkbox label:before {
   content: '';
   width: 100%;
   height: 100%;
   display: block;
   box-sizing: border-box;
 }
-.checkbox .checkbox input[type='radio']:checked ~ label:before {
-  background: url("../images/chbox-checked.jpg") no-repeat center / cover;
+.checkbox input[type='radio']:checked ~ label:before {
+  background: url("../images/radio-checked.png") no-repeat center / cover;
 }
-.checkbox .checkbox input[type='checkbox']:checked ~ label:before {
-  display: none;
+.checkbox input[type='checkbox']:checked ~ label:before {
   background: url("../images/chbox-checked.jpg") no-repeat center / cover;
 }
 .messagepop {
