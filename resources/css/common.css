@@ -434,7 +434,7 @@ header .login button {
 }
 .home-products-categories-list {
   padding: 40px 0 0;
-  margin-bottom: 15px;
+  margin-bottom: 80px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -478,7 +478,6 @@ header .login button {
   border-bottom: 1px solid #0fc8d1;
 }
 .home-advertision {
-  margin-top: 80px;
   padding: 40px 0 40px;
   background: #f6f6f6;
 }
