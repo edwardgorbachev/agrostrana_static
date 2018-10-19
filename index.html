@@ -13,796 +13,910 @@
 </head>
 <body class="home">
 
-    <div class="header-wrapper">
-        <header>
-            <div class="menu-wrapper">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 clearfix">
+<div class="header-wrapper">
+    <header>
+        <div class="menu-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 clearfix">
 
-                            <div class="logo pull-left">
-                                <a href="index.html">
-                                    <img class="img-responsive" src="resources/images/svg/res/logo.svg" alt="Logo">
-                                    <span>Агространа</span>
-                                </a>
-                            </div>
-
-
-                            <ul class="main-menu pull-left">
-                                <li class="mobile-close mobile"><a href="javascript:void(0);">закрыть</a></li>
-                                <li><a href="javascript:void(0);">Объявления</a></li>
-                                <li><a href="javascript:void(0);">Новости</a></li>
-                                <li><a href="javascript:void(0);">Фото и видео</a></li>
-                                <li class="mobile-logo mobile">
-                                    <a href="index.html">
-                                        <img class="img-responsive" src="resources/images/logo.png" alt="Logo">
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <a href="javascript:void(0);" class="mobile-bars clearfix">
-                                <div class="bars">
-                                    <span></span><span></span><span></span>
-                                </div>
+                        <div class="logo pull-left">
+                            <a href="index.html">
+                                <img class="img-responsive" src="resources/images/svg/res/logo.svg" alt="Logo">
+                                <span>Агространа</span>
                             </a>
+                        </div>
 
-                            <div class="login text-md-center pull-right hidden-xs hidden-sm">
-                                <a href="#">Вход/Регистрация</a> <button>Разместить</button>
+
+                        <ul class="main-menu pull-left">
+                            <li class="mobile-close mobile"><a href="javascript:void(0);">закрыть</a></li>
+                            <li><a href="card_product.html">Объявления</a></li>
+                            <li><a href="news.html">Новости</a></li>
+                            <li><a href="javascript:void(0);">Фото и видео</a></li>
+                            <li class="mobile-logo mobile">
+                                <a href="index.html">
+                                    <img class="img-responsive" src="resources/images/logo.png" alt="Logo">
+                                </a>
+                            </li>
+                        </ul>
+
+                        <a href="javascript:void(0);" class="mobile-bars clearfix">
+                            <div class="bars">
+                                <span></span><span></span><span></span>
                             </div>
+                        </a>
+
+                        <div class="login text-md-center pull-right hidden-xs hidden-sm">
+                            <a href="#">Вход/Регистрация</a>
+                            <button>Разместить</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <div class="header-content">
-            <div class="container clearfix">
+    <div class="header-content">
+        <div class="container clearfix">
 
-                    <div class="col-xs-12 page-header text-center">
-                        <h2>Единая торговая площадка</h2>
+            <div class="col-xs-12 page-header text-center">
+                <h2>Единая торговая площадка</h2>
+            </div>
+            <div class="col-xs-12 col-md-10 col-md-offset-1 top-search-form clearfix">
+                <form action="">
+                    <div class="row search-fields-wrapper">
+                        <div class="col-md-6"><input type="text" name="q" value="Рыба" placeholder="Что ищем?"/></div>
+                        <div class="col-md-5">
+                            <div class="city-place">
+                                <img class="geo" src="resources/images/svg/res/geo.svg" alt="" />
+                                <span>Ульяновск</span>
+                                <a href="#"><img class="close" src="resources/images/svg/res/close.svg" alt="" /></a>
+                            </div>
+                            <input type="text" class="input-place" name="place" value="" placeholder="Где ищем?"/>
+
+                        </div>
+                        <div class="col-md-1 text-xs-center text-sm-center">
+                            <button class="btn" type="submit">Найти</button>
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-md-10 col-md-offset-1 top-search-form clearfix">
-                        <form action="">
-                            <div class="row search-fields-wrapper">
-                                <div class="col-md-6"><input type="text" name="q" value="Рыба" placeholder="Что ищем?" /></div>
-                                <div class="col-md-5"><input type="text" name="place" value="" placeholder="Где ищем?" /></div>
-                                <div class="col-md-1">
-                                    <button class="btn" type="submit">Найти</button>
+
+                    <div class="line lines-wrapper clearfix">&nbsp;</div>
+
+                    <!-- ФИЛЬТРЫ ДЛЯ БОЛЬШОГО ЭКРАНА -->
+                    <div class="options clearfix row lines-wrapper hidden-xs hidden-sm">
+
+                        <div class="clearfix">
+
+                            <div class="type col-md-3 col-sm-12 col-xs-12 clearfix options-offset">
+
+                                <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="service-options" value="1" id="option_type3">
+                                        <label for="option_type3"></label>
+                                    </div>
+                                    <div class="service-name">
+                                        <span>Морская</span>
+                                    </div>
                                 </div>
+
+                                <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="service-options" value="1" id="type-1-32">
+                                        <label for="type-1-32"></label>
+                                    </div>
+                                    <div class="service-name">
+                                        <span>Речная</span>
+                                    </div>
+                                </div>
+
                             </div>
 
-                            <div class="line lines-wrapper clearfix">&nbsp;</div>
+                            <div class="type-2 col-md-3 col-sm-12 col-xs-12 clearfix">
 
-                                    <div class="options clearfix row lines-wrapper hidden-xs hidden-sm">
-
-                                        <div class="clearfix">
-
-                                            <div class="type col-md-3 col-sm-12 col-xs-12 clearfix options-offset">
-
-                                                <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
-                                                    <div class="checkbox">
-                                                        <input type="checkbox" name="service-options" value="1" id="option_type">
-                                                        <label for="option_type"></label>
-                                                    </div>
-                                                    <div class="service-name">
-                                                        <span>Морская</span>
-                                                    </div>
-                                                </div>
-
-                                                <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
-                                                    <div class="checkbox">
-                                                        <input type="checkbox" name="service-options" value="1" id="type-1-2">
-                                                        <label for="type-1-2"></label>
-                                                    </div>
-                                                    <div class="service-name">
-                                                        <span>Речная</span>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="type-2 col-md-3 col-sm-12 col-xs-12 clearfix">
-
-                                                <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
-                                                    <div class="checkbox">
-                                                        <input type="radio" name="service-options" value="" id="type-2-1">
-                                                        <label for="type-2-1"></label>
-                                                    </div>
-                                                    <div class="service-name">
-                                                        <span>Тушки</span>
-                                                    </div>
-                                                </div>
-
-                                                <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
-                                                    <div class="checkbox">
-                                                        <input type="radio" name="service-options" value="" id="type-2-2">
-                                                        <label for="type-2-2"></label>
-                                                    </div>
-                                                    <div class="service-name">
-                                                        <span>Филе</span>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-
-                                            <div class="type col-md-3 col-sm-12 col-xs-12 clearfix lines-wrapper">
-
-                                                <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
-                                                    <div class="checkbox">
-                                                        <input type="checkbox" name="service-options" value="" id="type-3-1">
-                                                        <label for="type-3-1"></label>
-                                                    </div>
-                                                    <div class="service-name">
-                                                        <span>Свежая</span>
-                                                    </div>
-                                                </div>
-
-                                                <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
-                                                    <div class="checkbox">
-                                                        <input type="checkbox" name="service-options" value="" id="type-3-2">
-                                                        <label for="type-3-2"></label>
-                                                    </div>
-                                                    <div class="service-name">
-                                                        <span>Мороженая</span>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="service-option col-md-3 col-sm-12 col-xs-12clearfix lines-wrapper">
-
-                                                <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
-                                                    <div class="checkbox">
-                                                        <input type="checkbox" name="service-options" value="" id="type-3-3">
-                                                        <label for="type-3-3"></label>
-                                                    </div>
-                                                    <div class="service-name">
-                                                        <span>Копченая</span>
-                                                    </div>
-                                                </div>
-
-                                                <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
-                                                    <div class="checkbox">
-                                                        <input type="checkbox" name="service-options" value="" id="type-3-4">
-                                                        <label for="type-3-4"></label>
-                                                    </div>
-                                                    <div class="service-name">
-                                                        <span>Сушеная</span>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
+                                <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
+                                    <div class="checkbox">
+                                        <input type="radio" name="service-options" value="" id="type-2-1">
+                                        <label for="type-2-1"></label>
                                     </div>
-
-
-
-
-                                    <div class="show-xs show-sm" style="margin-left: 40px;">
-
-                                        <div class="clearfix">
-
-                                            <div class="type">
-
-                                                <div style="width: 200px; margin: 0 auto;" class="clearfix">
-
-                                                    <div class="checkbox" style="width: 30px; float: left;">
-                                                        <input type="checkbox" name="service-options" value="1" id="option_type">
-                                                        <label for="option_type"></label>
-
-                                                    </div>
-
-                                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
-                                                        <span>Морская</span>
-                                                    </div>
-
-                                                    <div class="checkbox" style="width: 30px; float: left;">
-                                                        <input type="checkbox" name="service-options" value="1" id="type-1-2">
-                                                        <label for="type-1-2"></label>
-
-                                                    </div>
-
-                                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
-                                                        <span>Речная</span>
-                                                    </div>
-
-                                                </div>
-
-
-                                                <!---->
-                                                <!---->
-                                                <!---->
-                                                <!---->
-                                                <!---->
-
-                                                <div style="width: 200px; margin: 20px auto 0;" class="clearfix">
-
-                                                    <div class="checkbox" style="width: 30px; float: left;">
-                                                        <input type="radio" name="service-options" value="1" id="option_type">
-                                                        <label for="option_type"></label>
-
-                                                    </div>
-
-                                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
-                                                        <span>Тушки</span>
-                                                    </div>
-
-                                                    <div class="checkbox" style="width: 30px; float: left;">
-                                                        <input type="radio" name="service-options" value="1" id="type-1-2">
-                                                        <label for="type-1-2"></label>
-
-                                                    </div>
-
-                                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
-                                                        <span>Филе</span>
-                                                    </div>
-
-                                                </div>
-
-                                                <div style="width: 200px; margin: 20px auto 0;" class="clearfix">
-
-                                                    <div class="checkbox" style="width: 30px; float: left;">
-                                                        <input type="checkbox" name="service-options" value="1" id="option_type">
-                                                        <label for="option_type"></label>
-
-                                                    </div>
-
-                                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
-                                                        <span>Свежая</span>
-                                                    </div>
-
-                                                    <div class="checkbox" style="width: 30px; float: left;">
-                                                        <input type="checkbox" name="service-options" value="1" id="type-1-2">
-                                                        <label for="type-1-2"></label>
-
-                                                    </div>
-
-                                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
-                                                        <span>Мороженая</span>
-                                                    </div>
-
-                                                </div>
-
-                                                <div style="width: 200px; margin: 20px auto 0;" class="clearfix">
-
-                                                    <div class="checkbox" style="width: 30px; float: left;">
-                                                        <input type="checkbox" name="service-options" value="1" id="option_type">
-                                                        <label for="option_type"></label>
-
-                                                    </div>
-
-                                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
-                                                        <span>Копченая</span>
-                                                    </div>
-
-                                                    <div class="checkbox" style="width: 30px; float: left;">
-                                                        <input type="checkbox" name="service-options" value="1" id="type-1-2">
-                                                        <label for="type-1-2"></label>
-
-                                                    </div>
-
-                                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
-                                                        <span>Сушеная</span>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-
-
-                                            <div class="options-2 clearfix" style="margin-top: 0;">
-
-                                                <div>
-
-                                                    <div style="width: 250px; margin: 20px auto 0;">
-
-                                                        <div>
-                                                            <div class="service-name" style="width: 100px; float:left; margin: 0">
-                                                                <span>Производитель:</span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div style="width: 70px; float:left; ">
-                                                            <select>
-                                                                <option value="0">Не имеет значения</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="options-2 clearfix" style="margin-top: 0;">
-
-                                                <div>
-
-                                                    <div style="width: 250px; margin: 20px auto 0;">
-
-                                                        <div class="service-name" style="width: 100px; float:left; margin: 0">
-                                                            <span>Цена, кг:</span>
-                                                        </div>
-                                                        <div class="inputs clearfix">
-
-                                                            <input type="text" value="" placeholder="от" />
-                                                            <input type="text" value="" placeholder="до" />
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                            <div style="width: 120px; margin: 20px auto; ">
-
-                                                <button class="btn" type="submit">Показать</button>
-
-                                            </div>
-
-
-                                            <!--Тушки-->
-                                            <!--Филе-->
-                                            <!--Свежая-->
-                                            <!--Мороженая-->
-                                            <!--Копченая-->
-                                            <!--Сушеная-->
-
-                                        </div>
-
+                                    <div class="service-name">
+                                        <span>Тушки</span>
                                     </div>
+                                </div>
 
-                                    <!--<div class="options-2 clearfix">-->
+                                <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
+                                    <div class="checkbox">
+                                        <input type="radio" name="service-options" value="" id="type-2-2">
+                                        <label for="type-2-2"></label>
+                                    </div>
+                                    <div class="service-name">
+                                        <span>Филе</span>
+                                    </div>
+                                </div>
 
-                                    <!--<div class="row">-->
-
-                                    <!--<div class="col-md-12 clearfix">-->
-
-                                    <!--<div class="service-option col-md-3 col-sm-6 col-xs-6 text-md-right text-sm-left text-xs-left text-xs-left clearfix">-->
-                                    <!--<div class="service-name text-sm-left text-xs-center text-md-right text-xs-left">-->
-                                    <!--<span>Производитель:</span>-->
-                                    <!--</div>-->
-                                    <!--</div>-->
-
-                                    <!--<div class="service-option col-md-3 col-sm-6 col-xs-6 text-sm-right text-xs-center clearfix">-->
-                                    <!--<select>-->
-                                    <!--<option value="0">Не имеет значения</option>-->
-                                    <!--</select>-->
-                                    <!--</div>-->
-
-                                    <!--<div class="service-option col-md-6 col-sm-12 col-xs-12 lines-wrapper clearfix">-->
-
-                                    <!--<div class="service-option-inputs">-->
-
-                                    <!--<div class="service-name service-name-inputs">-->
-                                    <!--<span>Цена, кг:</span>-->
-                                    <!--</div>-->
-                                    <!--<div class="inputs clearfix">-->
-
-                                    <!--<input type="text" value="" placeholder="от" />-->
-                                    <!--<input type="text" value="" placeholder="до" />-->
-                                    <!--<button class="btn" type="submit">Показать</button>-->
-                                    <!--</div>-->
-
-                                    <!--</div>-->
-
-                                    <!--&lt;!&ndash;<div class="service-option">&ndash;&gt;-->
-                                    <!--&lt;!&ndash;&ndash;&gt;-->
-                                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                                    <!--</div>-->
-
-                                    <!--</div>-->
-
-                                    <!--</div>-->
+                            </div>
 
 
-                                    <!--</div>-->
+                            <div class="type col-md-3 col-sm-12 col-xs-12 clearfix lines-wrapper">
 
+                                <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="service-options" value="" id="type-3-1">
+                                        <label for="type-3-1"></label>
+                                    </div>
+                                    <div class="service-name">
+                                        <span>Свежая</span>
+                                    </div>
+                                </div>
+
+                                <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="service-options" value="" id="type-3-2">
+                                        <label for="type-3-2"></label>
+                                    </div>
+                                    <div class="service-name">
+                                        <span>Мороженая</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="service-option col-md-3 col-sm-12 col-xs-12clearfix lines-wrapper">
+
+                                <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="service-options" value="" id="type-3-3">
+                                        <label for="type-3-3"></label>
+                                    </div>
+                                    <div class="service-name">
+                                        <span>Копченая</span>
+                                    </div>
+                                </div>
+
+                                <div class="service-option col-md-6 col-sm-6 col-xs-6 clearfix">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="service-options" value="" id="type-3-4">
+                                        <label for="type-3-4"></label>
+                                    </div>
+                                    <div class="service-name">
+                                        <span>Сушеная</span>
+                                    </div>
+                                </div>
+
+                            </div>
 
                         </div>
 
-                        </form>
+                    </div>
+
+
+                    <!-- ФИЛЬТРЫ ДЛЯ МАЛЕНЬКОГО ЭКРАНА -->
+                    <div class="show-xs show-sm" style="margin-left: 40px;">
+
+                        <div class="clearfix">
+
+                            <div class="type">
+
+                                <div style="width: 200px; margin: 0 auto;" class="clearfix">
+
+                                    <div class="checkbox" style="width: 30px; float: left;">
+                                        <input type="checkbox" name="service-options" value="1" id="option_type">
+                                        <label for="option_type"></label>
+
+                                    </div>
+
+                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                        <span>Морская</span>
+                                    </div>
+
+                                    <div class="checkbox" style="width: 30px; float: left;">
+                                        <input type="checkbox" name="service-options" value="1" id="type-1-2">
+                                        <label for="type-1-2"></label>
+
+                                    </div>
+
+                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                        <span>Речная</span>
+                                    </div>
+
+                                </div>
+
+
+                                <!---->
+                                <!---->
+                                <!---->
+                                <!---->
+                                <!---->
+
+                                <div style="width: 200px; margin: 20px auto 0;" class="clearfix">
+
+                                    <div class="checkbox" style="width: 30px; float: left;">
+                                        <input type="radio" name="service-options" value="1" id="option_type">
+                                        <label for="option_type"></label>
+
+                                    </div>
+
+                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                        <span>Тушки</span>
+                                    </div>
+
+                                    <div class="checkbox" style="width: 30px; float: left;">
+                                        <input type="radio" name="service-options" value="1" id="type-1-2">
+                                        <label for="type-1-2"></label>
+
+                                    </div>
+
+                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                        <span>Филе</span>
+                                    </div>
+
+                                </div>
+
+                                <div style="width: 200px; margin: 20px auto 0;" class="clearfix">
+
+                                    <div class="checkbox" style="width: 30px; float: left;">
+                                        <input type="checkbox" name="service-options" value="1" id="option_type">
+                                        <label for="option_type"></label>
+
+                                    </div>
+
+                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                        <span>Свежая</span>
+                                    </div>
+
+                                    <div class="checkbox" style="width: 30px; float: left;">
+                                        <input type="checkbox" name="service-options" value="1" id="type-1-2">
+                                        <label for="type-1-2"></label>
+
+                                    </div>
+
+                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                        <span>Мороженая</span>
+                                    </div>
+
+                                </div>
+
+                                <div style="width: 200px; margin: 20px auto 0;" class="clearfix">
+
+                                    <div class="checkbox" style="width: 30px; float: left;">
+                                        <input type="checkbox" name="service-options" value="1" id="option_type">
+                                        <label for="option_type"></label>
+
+                                    </div>
+
+                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                        <span>Копченая</span>
+                                    </div>
+
+                                    <div class="checkbox" style="width: 30px; float: left;">
+                                        <input type="checkbox" name="service-options" value="1" id="type-1-2">
+                                        <label for="type-1-2"></label>
+
+                                    </div>
+
+                                    <div class="service-name" style="float:left; width: 60px; margin-left: 10px;">
+                                        <span>Сушеная</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="options-2 clearfix" style="margin-top: 0;">
+
+                                <div>
+
+                                    <div style="width: 250px; margin: 20px auto 0;">
+
+                                        <div>
+                                            <div class="service-name" style="width: 100px; float:left; margin: 0">
+                                                <span>Производитель:</span>
+                                            </div>
+                                        </div>
+
+                                        <div style="width: 70px; float:left; ">
+                                            <select>
+                                                <option value="0">Не имеет значения</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="options-2 clearfix" style="margin-top: 0;">
+
+                                <div>
+
+                                    <div style="width: 250px; margin: 20px auto 0;">
+
+                                        <div class="service-name" style="width: 100px; float:left; margin: 0">
+                                            <span>Цена, кг:</span>
+                                        </div>
+                                        <div class="inputs clearfix">
+
+                                            <input type="text" value="" placeholder="от"/>
+                                            <input type="text" value="" placeholder="до"/>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div style="width: 120px; margin: 20px auto; ">
+
+                                <button class="btn" type="submit">Показать</button>
+
+                            </div>
+
+
+                            <!--Тушки-->
+                            <!--Филе-->
+                            <!--Свежая-->
+                            <!--Мороженая-->
+                            <!--Копченая-->
+                            <!--Сушеная-->
+
+                        </div>
 
                     </div>
 
-        </div>
-    </div>
-
-    <div class="home-products-categories-list container clearfix">
-
-        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
-
-            <div class="category-image">
-                <div class="image"><img src="resources/images/svg/res/meat.svg" alt="" /></div>
-            </div>
-
-            <div class="products-list">
-
-                <div class="name"><a href="#">Мясо, мясная продукция</a></div>
-
-                <ul class="list-inline">
-                    <li><a href="#">Баранина</a></li>
-                    <li><a href="#">Свинина</a></li>
-                    <li><a href="#">Субпродукты</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
-
-            <div class="category-image">
-                <div class="image"><img src="resources/images/svg/res/bird.svg" alt="" /></div>
-            </div>
-
-            <div class="products-list">
-
-                <div class="name"><a href="#">Мясо птицы</a></div>
-
-                <ul class="list-inline">
-                    <li><a href="#">Курица</a></li>
-                    <li><a href="#">Индейка</a></li>
-                    <li><a href="#">Утка</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
-
-            <div class="category-image">
-                <div class="image"><img src="resources/images/svg/res/fish.svg" alt="" /></div>
-            </div>
-
-            <div class="products-list">
-
-                <div class="name"><a href="#">Рыба, Морепродукты</a></div>
-
-                <ul class="list-inline">
-                    <li><a href="#">Семга</a></li>
-                    <li><a href="#">Креветки</a></li>
-                    <li><a href="#">Икра</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
-
-            <div class="category-image">
-                <div class="image"><img src="resources/images/svg/res/tomato.svg" alt="" /></div>
-            </div>
-
-            <div class="products-list">
-
-                <div class="name"><a href="#">Овощи</a></div>
-
-                <ul class="list-inline">
-                    <li><a href="#">Картофель</a></li>
-                    <li><a href="#">Томаты</a></li>
-                    <li><a href="#">Огурцы</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
-
-            <div class="category-image">
-                <div class="image"><img src="resources/images/svg/res/berries.svg" alt="" /></div>
-            </div>
-
-            <div class="products-list">
-
-                <div class="name"><a href="#">Фрукты и ягоды</a></div>
-
-                <ul class="list-inline">
-                    <li><a href="#">Черника</a></li>
-                    <li><a href="#">Малина</a></li>
-                    <!--<li><a href="#">Лисички</a></li> &lt;!&ndash; todo ЛИСИЧКИ???? &ndash;&gt;-->
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
-
-            <div class="category-image">
-                <div class="image"><img src="resources/images/svg/res/milk.svg" alt="" /></div>
-            </div>
-
-            <div class="products-list">
-
-                <div class="name"><a href="#">Молоко, молочная продукция</a></div>
-
-                <ul class="list-inline">
-                    <li><a href="#">Молоко</a></li>
-                    <li><a href="#">Сыр</a></li>
-                    <li><a href="#">Сметана</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
-
-            <div class="category-image">
-                <div class="image"><img src="resources/images/svg/res/croup.svg" alt="" /></div>
-            </div>
-
-            <div class="products-list">
-
-                <div class="name"><a href="#">Крупа</a></div>
-
-                <ul class="list-inline">
-                    <li><a href="#">Рис</a></li>
-                    <li><a href="#">Гречка</a></li>
-                    <li><a href="#">Перловка</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
-
-            <div class="category-image">
-                <div class="image"><img src="resources/images/svg/res/corn.svg" alt="" /></div>
-            </div>
-
-            <div class="products-list">
-
-                <div class="name"><a href="#">Зернопродукты</a></div>
-
-                <ul class="list-inline">
-                    <li><a href="#">Пшеница</a></li>
-                    <li><a href="#">Овёс</a></li>
-                    <li><a href="#">Гречиха</a></li>
-                </ul>
-            </div>
+            </form>
 
         </div>
 
     </div>
+</div>
+
+<div class="home-products-categories-list container clearfix">
+
+    <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
+
+        <div class="category-image">
+            <div class="image"><img src="resources/images/svg/res/meat.svg" alt=""/></div>
+        </div>
+
+        <div class="products-list">
+
+            <div class="name"><a href="#">Мясо, мясная продукция</a></div>
+
+            <ul class="list-inline">
+                <li><a href="#">Баранина</a></li>
+                <li><a href="#">Свинина</a></li>
+                <li><a href="#">Субпродукты</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
+
+        <div class="category-image">
+            <div class="image"><img src="resources/images/svg/res/bird.svg" alt=""/></div>
+        </div>
+
+        <div class="products-list">
+
+            <div class="name"><a href="#">Мясо птицы</a></div>
+
+            <ul class="list-inline">
+                <li><a href="#">Курица</a></li>
+                <li><a href="#">Индейка</a></li>
+                <li><a href="#">Утка</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
+
+        <div class="category-image">
+            <div class="image"><img src="resources/images/svg/res/fish.svg" alt=""/></div>
+        </div>
+
+        <div class="products-list">
+
+            <div class="name"><a href="#">Рыба, Морепродукты</a></div>
+
+            <ul class="list-inline">
+                <li><a href="#">Семга</a></li>
+                <li><a href="#">Креветки</a></li>
+                <li><a href="#">Икра</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
+
+        <div class="category-image">
+            <div class="image"><img src="resources/images/svg/res/tomato.svg" alt=""/></div>
+        </div>
+
+        <div class="products-list">
+
+            <div class="name"><a href="#">Овощи</a></div>
+
+            <ul class="list-inline">
+                <li><a href="#">Картофель</a></li>
+                <li><a href="#">Томаты</a></li>
+                <li><a href="#">Огурцы</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
+
+        <div class="category-image">
+            <div class="image"><img src="resources/images/svg/res/berries.svg" alt=""/></div>
+        </div>
+
+        <div class="products-list">
+
+            <div class="name"><a href="#">Фрукты и ягоды</a></div>
+
+            <ul class="list-inline">
+                <li><a href="#">Черника</a></li>
+                <li><a href="#">Малина</a></li>
+                <!--<li><a href="#">Лисички</a></li> &lt;!&ndash; todo ЛИСИЧКИ???? &ndash;&gt;-->
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
+
+        <div class="category-image">
+            <div class="image"><img src="resources/images/svg/res/milk.svg" alt=""/></div>
+        </div>
+
+        <div class="products-list">
+
+            <div class="name"><a href="#">Молоко, молочная продукция</a></div>
+
+            <ul class="list-inline">
+                <li><a href="#">Молоко</a></li>
+                <li><a href="#">Сыр</a></li>
+                <li><a href="#">Сметана</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
+
+        <div class="category-image">
+            <div class="image"><img src="resources/images/svg/res/croup.svg" alt=""/></div>
+        </div>
+
+        <div class="products-list">
+
+            <div class="name"><a href="#">Крупа</a></div>
+
+            <ul class="list-inline">
+                <li><a href="#">Рис</a></li>
+                <li><a href="#">Гречка</a></li>
+                <li><a href="#">Перловка</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
+
+        <div class="category-image">
+            <div class="image"><img src="resources/images/svg/res/corn.svg" alt=""/></div>
+        </div>
+
+        <div class="products-list">
+
+            <div class="name"><a href="#">Зернопродукты</a></div>
+
+            <ul class="list-inline">
+                <li><a href="#">Пшеница</a></li>
+                <li><a href="#">Овёс</a></li>
+                <li><a href="#">Гречиха</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container">
+
+    <div><a href="#"><img class="img-responsive" src="resources/images/sber_small.jpg" alt=""/></a></div>
+
+</div>
+
+<div class="home-products-categories-list container clearfix">
+
+    <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
+
+        <div class="category-image">
+            <div class="image"><img src="resources/images/svg/res/feed.svg" alt=""/></div>
+        </div>
+
+        <div class="products-list">
+
+            <div class="name"><a href="#">Корма</a></div>
+
+            <ul class="list-inline">
+                <li><a href="#">Комбикорм</a></li>
+                <li><a href="#">Зерно</a></li>
+                <li><a href="#">Добавки</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
+
+        <div class="category-image">
+            <div class="image"><img src="resources/images/svg/res/nuts.svg" alt=""/></div>
+        </div>
+
+        <div class="products-list">
+
+            <div class="name"><a href="#">Орехи</a></div>
+
+            <ul class="list-inline">
+                <li><a href="#">Грецкие</a></li>
+                <li><a href="#">Фундук</a></li>
+                <li><a href="#">Миндаль</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
+
+        <div class="category-image">
+            <div class="image"><img src="resources/images/svg/res/mushrooms.svg" alt=""/></div>
+        </div>
+
+        <div class="products-list">
+
+            <div class="name"><a href="#">Грибы</a></div>
+
+            <ul class="list-inline">
+                <li><a href="#">Белые</a></li>
+                <li><a href="#">Опята</a></li>
+                <li><a href="#">Вешенки</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
+
+        <div class="category-image">
+            <div class="image"><img src="resources/images/svg/res/seed.svg" alt=""/></div>
+        </div>
+
+        <div class="products-list">
+
+            <div class="name"><a href="#">Семена и саженцы</a></div>
+
+            <ul class="list-inline">
+                <li><a href="#">Овощные</a></li>
+                <li><a href="#">Плодовые</a></li>
+                <li><a href="#">Цветочные</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
+
+        <div class="category-image">
+            <div class="image"><img src="resources/images/svg/res/box.svg" alt=""/></div>
+        </div>
+
+        <div class="products-list">
+
+            <div class="name"><a href="#">Упаковка</a></div>
+
+            <ul class="list-inline">
+                <li><a href="#">Ящики</a></li>
+                <li><a href="#">Контейнеры</a></li>
+                <li><a href="#">Пакеты</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
+
+        <div class="category-image">
+            <div class="image"><img src="resources/images/svg/res/chemistry.svg" alt=""/></div>
+        </div>
+
+        <div class="products-list">
+
+            <div class="name"><a href="#">Агрохимия</a></div>
+
+            <ul class="list-inline">
+                <li><a href="#">Удобрения</a></li>
+                <li><a href="#">Пестициды</a></li>
+                <li><a href="#">Средства защиты растений</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
+
+        <div class="category-image">
+            <div class="image"><img src="resources/images/svg/res/tractor.svg" alt=""/></div>
+        </div>
+
+        <div class="products-list">
+
+            <div class="name"><a href="#">Техника</a></div>
+
+            <ul class="list-inline">
+                <li><a href="#">Тракторы</a></li>
+                <li><a href="#">Комбайны</a></li>
+                <li><a href="#">Прицепы</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
+
+        <div class="category-image">
+            <div class="image"><img src="resources/images/svg/res/freeze.svg" alt=""/></div>
+        </div>
+
+        <div class="products-list">
+
+            <div class="name"><a href="#">Оборудование для <span class="nowrap">с/х</span></a></div>
+
+            <ul class="list-inline">
+                <li><a href="#">Холодильное</a></li>
+                <li><a href="#">Сушильное</a></li>
+                <li><a href="#">Упаковочное</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="home-advertision clearfix">
 
     <div class="container">
 
-        <div><a href="#"><img class="img-responsive" src="resources/images/sber_small.jpg" alt="" /></a></div>
+        <div class="block-headers clearfix">
 
-    </div>
+            <div class="block-header col-md-6 col-sm-6 clearfix">
 
-    <div class="home-products-categories-list container clearfix">
+                <h4>Лучшие предложения в Ульяновске</h4>
 
-        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
-
-            <div class="category-image">
-                <div class="image"><img src="resources/images/svg/res/feed.svg" alt="" /></div>
             </div>
 
-            <div class="products-list">
+            <div class="block-link-all col-md-6 col-sm-6 text-right clearfix">
 
-                <div class="name"><a href="#">Корма</a></div>
+                <a href="card_product.html" class="hidden-xs"><span>Все предложения</span>&nbsp;<img
+                        src="resources/images/right_arrow.png" alt=""/></a>
 
-                <ul class="list-inline">
-                    <li><a href="#">Комбикорм</a></li>
-                    <li><a href="#">Зерно</a></li>
-                    <li><a href="#">Добавки</a></li>
-                </ul>
             </div>
 
         </div>
 
-        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
+        <div class="advertision-list">
 
-            <div class="category-image">
-                <div class="image"><img src="resources/images/svg/res/nuts.svg" alt="" /></div>
+            <div class="col-md-4 clearfix">
+
+                <div class="advertision-item">
+
+                    <div class="image">
+                        <img src="resources/images/adv_image_1.jpg" alt=""/>
+                    </div>
+
+                    <div class="text">
+
+                        <div class="description"><a href="card_product.html">Запчасти к тюковым пресс-подборщикам
+                            <!--ПТ-165М--></a></div>
+                        <div class="date">10 октября в 17:00</div>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="products-list">
+            <div class="col-md-4 clearfix hidden-xs hidden-sm">
 
-                <div class="name"><a href="#">Орехи</a></div>
+                <div class="advertision-item">
 
-                <ul class="list-inline">
-                    <li><a href="#">Грецкие</a></li>
-                    <li><a href="#">Фундук</a></li>
-                    <li><a href="#">Миндаль</a></li>
-                </ul>
+                    <div class="image">
+                        <img src="resources/images/adv_image_2.jpg" alt=""/>
+                    </div>
+
+                    <div class="text">
+
+                        <div class="description"><a href="card_product.html">Зерно кукурузы кормовой 3 класса</a></div>
+                        <div class="date">10 октября в 17:00</div>
+
+                    </div>
+
+                </div>
+
             </div>
 
-        </div>
+            <div class="col-md-4 clearfix hidden-xs hidden-sm">
 
-        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
+                <div class="advertision-item">
 
-            <div class="category-image">
-                <div class="image"><img src="resources/images/svg/res/mushrooms.svg" alt="" /></div>
-            </div>
+                    <div class="image">
+                        <img src="resources/images/adv_image_3.jpg" alt=""/>
+                    </div>
 
-            <div class="products-list">
+                    <div class="text">
 
-                <div class="name"><a href="#">Грибы</a></div>
+                        <div class="description"><a href="card_product.html">Мясо цыплят в собственном соку (525г)</a></div>
+                        <div class="date">10 октября в 17:00</div>
 
-                <ul class="list-inline">
-                    <li><a href="#">Белые</a></li>
-                    <li><a href="#">Опята</a></li>
-                    <li><a href="#">Вешенки</a></li>
-                </ul>
-            </div>
+                    </div>
 
-        </div>
+                </div>
 
-        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
-
-            <div class="category-image">
-                <div class="image"><img src="resources/images/svg/res/seed.svg" alt="" /></div>
-            </div>
-
-            <div class="products-list">
-
-                <div class="name"><a href="#">Семена и саженцы</a></div>
-
-                <ul class="list-inline">
-                    <li><a href="#">Овощные</a></li>
-                    <li><a href="#">Плодовые</a></li>
-                    <li><a href="#">Цветочные</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
-
-            <div class="category-image">
-                <div class="image"><img src="resources/images/svg/res/box.svg" alt="" /></div>
-            </div>
-
-            <div class="products-list">
-
-                <div class="name"><a href="#">Упаковка</a></div>
-
-                <ul class="list-inline">
-                    <li><a href="#">Ящики</a></li>
-                    <li><a href="#">Контейнеры</a></li>
-                    <li><a href="#">Пакеты</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
-
-            <div class="category-image">
-                <div class="image"><img src="resources/images/svg/res/chemistry.svg" alt="" /></div>
-            </div>
-
-            <div class="products-list">
-
-                <div class="name"><a href="#">Агрохимия</a></div>
-
-                <ul class="list-inline">
-                    <li><a href="#">Удобрения</a></li>
-                    <li><a href="#">Пестициды</a></li>
-                    <li><a href="#">Средства защиты растений</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
-
-            <div class="category-image">
-                <div class="image"><img src="resources/images/svg/res/tractor.svg" alt="" /></div>
-            </div>
-
-            <div class="products-list">
-
-                <div class="name"><a href="#">Техника</a></div>
-
-                <ul class="list-inline">
-                    <li><a href="#">Тракторы</a></li>
-                    <li><a href="#">Комбайны</a></li>
-                    <li><a href="#">Прицепы</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="product-category col-md-3 col-sm-6 col-xs-6  clearfix">
-
-            <div class="category-image">
-                <div class="image"><img src="resources/images/svg/res/freeze.svg" alt="" /></div>
-            </div>
-
-            <div class="products-list">
-
-                <div class="name"><a href="#">Оборудование для <span class="nowrap">с/х</span></a></div>
-
-                <ul class="list-inline">
-                    <li><a href="#">Холодильное</a></li>
-                    <li><a href="#">Сушильное</a></li>
-                    <li><a href="#">Упаковочное</a></li>
-                </ul>
             </div>
 
         </div>
 
     </div>
 
-    <div class="home-advertision clearfix">
+</div>
 
-        <div class="container">
+<div class="home-info clearfix">
+
+    <div class="container clearfix">
+
+        <div class="news-info col-md-7 clearfix">
 
             <div class="block-headers clearfix">
 
-                <div class="block-header col-md-6 col-sm-6 clearfix">
+                <div class="block-header col-md-6 col-xs-6 clearfix">
 
-                    <h4>Лучшие предложения в Ульяновске</h4>
+                    <h4><a href="news.html">Новости</a></h4>
 
                 </div>
 
-                <div class="block-link-all col-md-6 col-sm-6 text-right clearfix">
+                <div class="block-link-all col-md-6 col-xs-6 text-right clearfix">
 
-                    <a href="card_product.html" class="hidden-xs"><span>Все предложения</span>&nbsp;<img src="resources/images/right_arrow.png" alt="" /></a>
+                    <a href="news.html"><span>В раздел</span>&nbsp;<img src="resources/images/right_arrow.png" alt=""/></a>
 
                 </div>
 
             </div>
 
-            <div class="advertision-list">
+            <div class="news-list">
 
-                <div class="col-md-4 clearfix">
+                <a href="news.html" class="news-item col-md-6 clearfix">
 
-                    <div class="advertision-item">
+                    <div class="news-date">10 октября 2018 года</div>
+                    <div class="news-description"><span>Прохладное и дождливое лето на Среднем Урале повысит цену молока на 10%</span>
+                    </div>
+                    <div class="more"><span>Узнать больше</span>&nbsp;<img src="resources/images/right_arrow.png"
+                                                                           alt=""/></div>
 
-                        <div class="image">
-                            <img src="resources/images/adv_image_1.jpg" alt="" />
-                        </div>
+                </a>
 
-                        <div class="text">
+                <a href="news.html" class="news-item col-md-6 clearfix">
 
-                            <div class="description"><a href="card_product.html">Запчасти к тюковым пресс-подборщикам <!--ПТ-165М--></a></div>
-                            <div class="date">10 октября в 17:00</div>
+                    <div class="news-date">18 августа 2015 года</div>
+                    <div class="news-description"><span>Россия за 7 месяцев нарастила выпуск мяса, рыбы и сыров</span>
+                    </div>
+                    <div class="more"><span>Узнать больше</span>&nbsp;<img src="resources/images/right_arrow.png"
+                                                                           alt=""/></div>
 
+                </a>
+
+                <a href="news.html" class="news-item col-md-6 clearfix">
+
+                    <div class="news-date">28 июля 2015</div>
+                    <div class="news-description"><span>В Великом Новгороде прошел полномасштабный бизнес-тренинг «Вместе к успеху»</span>
+                    </div>
+                    <div class="more"><span>Узнать больше</span>&nbsp;<img src="resources/images/right_arrow.png"
+                                                                           alt=""/></div>
+
+                </a>
+
+                <a href="news.html" class="news-item col-md-6 clearfix">
+
+                    <div class="news-date">28 июля 2015</div>
+                    <div class="news-description"><span>Французские фермеры блокируют въезд продовольственных машин из Германии и Испании</span>
+                    </div>
+                    <div class="more"><span>Узнать больше</span>&nbsp;<img src="resources/images/right_arrow.png"
+                                                                           alt=""/></div>
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+        <div class="col-md-1">&nbsp;</div>
+
+        <div class="wiki-info col-md-4 clearfix">
+
+            <div class="block-headers clearfix">
+
+                <div class="block-header col-md-6 col-xs-6 clearfix">
+
+                    <h4><a href="#">АгроWIKI</a></h4>
+
+                </div>
+
+                <div class="block-link-all col-md-6 col-xs-6 text-right clearfix">
+
+                    <a href="#"><span>В раздел</span>&nbsp;<img src="resources/images/right_arrow.png" alt=""/></a>
+
+                </div>
+
+            </div>
+
+            <div class="wiki-list col-md-12 clearfix">
+
+                <div class="wiki-item">
+
+                    <div class="wiki-image">
+                        <div class="image"><img src="resources/images/wiki_image_1.jpg" alt=""/></div>
+                    </div>
+
+                    <div class="wiki-text">
+
+                        <div class="name"><a href="#">Твердые сыры</a></div>
+                        <div class="description">Во всем мире твердые сыры пользуются давней и заслуженной
+                            популярностью. Им свойственна плотная, даже можно сказать твердая консистенция. Процесс
+                            производства твердых сыров очень длительный, требующий особого внимания. Сырная масса
+                            твердых сортов сыра, в отличие от мягких...
                         </div>
 
                     </div>
 
                 </div>
 
-                <div class="col-md-4 clearfix hidden-xs hidden-sm">
+                <div class="wiki-item">
 
-                    <div class="advertision-item">
+                    <div class="wiki-image">
+                        <div class="image"><img src="resources/images/wiki_image_3.jpg" alt=""/></div>
+                    </div>
 
-                        <div class="image">
-                            <img src="resources/images/adv_image_2.jpg" alt="" />
-                        </div>
+                    <div class="wiki-text">
 
-                        <div class="text">
-
-                            <div class="description"><a href="card_product.html">Зерно кукурузы кормовой 3 класса</a></div>
-                            <div class="date">10 октября в 17:00</div>
-
+                        <div class="name"><a href="#">Масло сливочное</a></div>
+                        <div class="description">Сливочное масло известно с давних времен, оно употреблялось в пищу еще
+                            5000 лет назад. Первым аппаратом для выработки сливочного масла была маслобойка. В 1820 году
+                            изобрели сепаратор и масло стали изготавливать промышленным способом. Уже к 1920 году в
+                            России существовало 130...
                         </div>
 
                     </div>
 
                 </div>
 
-                <div class="col-md-4 clearfix hidden-xs hidden-sm">
+                <div class="wiki-item">
 
-                    <div class="advertision-item">
+                    <div class="wiki-image">
+                        <div class="image"><img src="resources/images/wiki_image_2.jpg" alt=""/></div>
+                    </div>
 
-                        <div class="image">
-                            <img src="resources/images/adv_image_3.jpg" alt="" />
-                        </div>
+                    <div class="wiki-text">
 
-                        <div class="text">
-
-                            <div class="description"><a href="card_product.html">Мясо цыплят в собственном соку (525г)</a></div>
-                            <div class="date">10 октября в 17:00</div>
-
+                        <div class="name"><a href="#">Кефир</a></div>
+                        <div class="description">Кефир – ферментированный молочный напиток. Родиной кефира принято
+                            считать Северный Кавказ, где он появился много веков назад. Местное население хранило молоко
+                            в кожаных бурдюках, где оно сквашивалось. Рецепт их изготовления кефира держали в строжайшем
+                            секрете. Он содержит...
                         </div>
 
                     </div>
@@ -815,187 +929,54 @@
 
     </div>
 
-    <div class="home-info clearfix">
+</div>
 
-        <div class="container clearfix">
+<div class="container" style="margin-top: 100px;">
 
-            <div class="news-info col-md-7 clearfix">
+    <div><a href="#"><img class="img-responsive" src="resources/images/sber-big.jpg" alt=""/></a></div>
 
-                <div class="block-headers clearfix">
+</div>
 
-                    <div class="block-header col-md-6 col-xs-6 clearfix">
+<footer>
 
-                        <h4><a href="#">Новости</a></h4>
-
-                    </div>
-
-                    <div class="block-link-all col-md-6 col-xs-6 text-right clearfix">
-
-                        <a href="#"><span>В раздел</span>&nbsp;<img src="resources/images/right_arrow.png" alt="" /></a>
-
-                    </div>
-
+    <div class="container">
+        <div class="row">
+            <div class="footer-top-content clearfix">
+                <div class="col-md-1">
+                    <a href="index.html"><img class="footer-logo" src="resources/images/svg/res/logo.svg" alt=""></a>
                 </div>
+                <div class="col-md-10">
+                    <ul class="list-inline">
+                        <li><a href="javascript:void(0);">Выставки</a></li>
+                        <li><a href="javascript:void(0);">Стандарты</a></li>
+                        <li><a href="javascript:void(0);">Словарь</a></li>
+                        <li><a href="javascript:void(0);">Помощь и поддержка</a></li>
+                        <li><a href="javascript:void(0);">Пользовательское соглашение</a></li>
+                    </ul>
 
-                <div class="news-list">
+                    <div class="copyright-text-socials clearfix">
+                        <div class="copyright-text">
+                            &copy; 2012-2018, &laquo;Агространа&raquo;.
+                        </div>
+                        <div class="socials">
+                            <ul class="list-inline">
+                                <li><a href="#"><img src="resources/images/svg/social_vk.svg" alt=""/></a></li>
+                                <li><a href="#"><img src="resources/images/svg/social_fb.svg" alt=""/></a></li>
+                                <li><a href="#"><img src="resources/images/svg/social_ok.svg" alt=""/></a></li>
+                            </ul>
+                        </div>
 
-                    <a class="news-item col-md-6 clearfix">
-
-                        <div class="news-date">10 октября 2018 года</div>
-                        <div class="news-description"><span>Прохладное и дождливое лето на Среднем Урале повысит цену молока на 10%</span></div>
-                        <div class="more"><span>Узнать больше</span>&nbsp;<img src="resources/images/right_arrow.png" alt="" /></div>
-
-                    </a>
-
-                    <a class="news-item col-md-6 clearfix">
-
-                        <div class="news-date">18 августа 2015 года</div>
-                        <div class="news-description"><span>Россия за 7 месяцев нарастила выпуск мяса, рыбы и сыров</span></div>
-                        <div class="more"><span>Узнать больше</span>&nbsp;<img src="resources/images/right_arrow.png" alt="" /></div>
-
-                    </a>
-
-                    <a class="news-item col-md-6 clearfix">
-
-                        <div class="news-date">28 июля 2015</div>
-                        <div class="news-description"><span>В Великом Новгороде прошел полномасштабный бизнес-тренинг «Вместе к успеху»</span></div>
-                        <div class="more"><span>Узнать больше</span>&nbsp;<img src="resources/images/right_arrow.png" alt="" /></div>
-
-                    </a>
-
-                    <a class="news-item col-md-6 clearfix">
-
-                        <div class="news-date">28 июля 2015</div>
-                        <div class="news-description"><span>Французские фермеры блокируют въезд продовольственных машин из Германии и Испании</span></div>
-                        <div class="more"><span>Узнать больше</span>&nbsp;<img src="resources/images/right_arrow.png" alt="" /></div>
-
-                    </a>
-
+                    </div>
                 </div>
-
-
-            </div>
-
-            <div class="col-md-1">&nbsp;</div>
-
-            <div class="wiki-info col-md-4 clearfix">
-
-                <div class="block-headers clearfix">
-
-                    <div class="block-header col-md-6 col-xs-6 clearfix">
-
-                        <h4><a href="#">АгроWIKI</a></h4>
-
-                    </div>
-
-                    <div class="block-link-all col-md-6 col-xs-6 text-right clearfix">
-
-                        <a href="#"><span>В раздел</span>&nbsp;<img src="resources/images/right_arrow.png" alt="" /></a>
-
-                    </div>
-
-                </div>
-
-                <div class="wiki-list col-md-12 clearfix">
-
-                    <div class="wiki-item">
-
-                        <div class="wiki-image">
-                            <div class="image"><img src="resources/images/wiki_image_1.jpg" alt="" /></div>
-                        </div>
-
-                        <div class="wiki-text">
-
-                            <div class="name"><a href="#">Твердые сыры</a></div>
-                            <div class="description">Во всем мире твердые сыры пользуются давней и заслуженной популярностью. Им свойственна плотная, даже можно сказать твердая консистенция.  Процесс производства твердых сыров очень длительный, требующий особого внимания. Сырная масса твердых сортов сыра, в отличие от мягких...</div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="wiki-item">
-
-                        <div class="wiki-image">
-                            <div class="image"><img src="resources/images/wiki_image_3.jpg" alt="" /></div>
-                        </div>
-
-                        <div class="wiki-text">
-
-                            <div class="name"><a href="#">Масло сливочное</a></div>
-                            <div class="description">Сливочное масло известно с давних времен, оно употреблялось в пищу еще 5000 лет назад. Первым аппаратом для выработки сливочного масла была маслобойка. В 1820 году изобрели сепаратор и масло стали изготавливать промышленным способом. Уже к 1920 году в России существовало 130...</div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="wiki-item">
-
-                        <div class="wiki-image">
-                            <div class="image"><img src="resources/images/wiki_image_2.jpg" alt="" /></div>
-                        </div>
-
-                        <div class="wiki-text">
-
-                            <div class="name"><a href="#">Кефир</a></div>
-                            <div class="description">Кефир –  ферментированный молочный напиток. Родиной кефира принято считать Северный Кавказ, где он появился много веков назад. Местное население хранило молоко в кожаных бурдюках, где оно сквашивалось. Рецепт их изготовления кефира держали в строжайшем секрете. Он содержит...</div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="container" style="margin-top: 100px;">
-
-        <div><a href="#"><img class="img-responsive" src="resources/images/sber-big.jpg" alt="" /></a></div>
-
-    </div>
-
-    <footer>
-
-        <div class="container">
-            <div class="row">
-                <div class="footer-top-content clearfix">
-                    <div class="col-md-1">
-                        <a href="index.html"><img class="footer-logo" src="resources/images/svg/res/logo.svg" alt=""></a>
-                    </div>
-                    <div class="col-md-10">
-                        <ul class="list-inline">
-                            <li><a href="javascript:void(0);">Выставки</a></li>
-                            <li><a href="javascript:void(0);">Стандарты</a></li>
-                            <li><a href="javascript:void(0);">Словарь</a></li>
-                            <li><a href="javascript:void(0);">Помощь и поддержка</a></li>
-                            <li><a href="javascript:void(0);">Пользовательское соглашение</a></li>
-                        </ul>
-
-                        <div class="copyright-text-socials clearfix">
-                            <div class="copyright-text">
-                                &copy; 2012-2018, &laquo;Агространа&raquo;.
-                            </div>
-                            <div class="socials">
-                                <ul class="list-inline">
-                                    <li><a href="#"><img src="resources/images/svg/social_vk.svg" alt=""/></a></li>
-                                    <li><a href="#"><img src="resources/images/svg/social_fb.svg" alt=""/></a></li>
-                                    <li><a href="#"><img src="resources/images/svg/social_ok.svg" alt=""/></a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-1 text-right">
-                        <a href="javascript:void(0);" id="go-to-top" class="up-arrow"><img src="resources/images/svg/res/arrow.svg" alt="UP" /></a>
-                    </div>
+                <div class="col-md-1 text-right">
+                    <a href="javascript:void(0);" id="go-to-top" class="up-arrow"><img
+                            src="resources/images/svg/res/arrow.svg" alt="UP"/></a>
                 </div>
             </div>
         </div>
+    </div>
 
-    </footer>
+</footer>
 
 </body>
 </html>

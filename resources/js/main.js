@@ -70,3 +70,49 @@ function addMetaViewport( scale )
     //$('head').append('<meta name="viewport" content="width=device-width, initial-scale="' + scale +'">');
 
 }
+
+
+function deselect(e) {
+    $('.pop').slideFadeToggle(function() {
+        e.removeClass('selected');
+    });
+}
+
+$(function() {
+
+    $('.catalogue-link a').on('click', function(e) {
+
+        e.preventDefault();
+
+        if($(this).hasClass('selected')) {
+            deselect($(this));
+        } else {
+            $(this).addClass('selected');
+            $('.pop').slideFadeToggle();
+        }
+        return false;
+    });
+
+    $('.close').on('click', function() {
+        deselect( $('.catalogue-link a') );
+        return false;
+    });
+
+    $(document).on('click', function(){
+        $('.pop').hide();
+        return false;
+    });
+
+    // $(document).on('click', function(){
+    //     deselect( $('.catalogue-link a') );
+    //     return false;
+    // });​
+
+    $('.pop').click(function(e){
+        e.stopPropagation();
+    });
+});
+
+$.fn.slideFadeToggle = function(easing, callback) {
+    return this.animate({ opacity: 'toggle', height: 'toggle' }, 'fast', easing, callback);
+};

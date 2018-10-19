@@ -342,9 +342,53 @@ header .login button {
   display: block;
   width: 100%;
   border: 1px solid #a1eacb;
-  padding: 9px 20px 9px;
+  padding: 11px 20px 11px;
   font-size: 18px;
   margin-bottom: 30px;
+}
+.top-search-form .search-fields-wrapper input[type='text'].input-place {
+  padding-left: 140px;
+}
+.top-search-form .search-btn {
+  height: 42px;
+}
+.top-search-form .catalogue-link a {
+  display: block;
+  width: 120px;
+  margin-left: 30px;
+  line-height: 40px;
+  height: 45px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 16px;
+  border: 2px solid #FFFFFF;
+}
+.top-search-form .city-place {
+  position: absolute;
+  width: 121px;
+  height: 24px;
+  line-height: 24px;
+  background: #01d185;
+  color: #FFFFFF;
+  margin: 11px 0 0 10px;
+  padding-left: 3px;
+}
+.top-search-form .city-place span {
+  padding-left: 4px;
+}
+.top-search-form .city-place img.geo {
+  width: 13px;
+  height: 13px;
+  position: relative;
+  top: 3px;
+  left: 2px;
+}
+.top-search-form .city-place img.close {
+  width: 9px;
+  height: 9px;
+  position: relative;
+  top: 0;
+  left: 8px;
 }
 .top-search-form .service-name {
   margin-left: 30px;
@@ -562,6 +606,7 @@ header .login button {
 .home-info .wiki-info .wiki-list .wiki-item .wiki-text .description {
   margin-top: 10px;
   font-size: 15px;
+  line-height: 1.3;
 }
 .block-link-all a span {
   border-bottom: 1px solid #e6e6e6;
@@ -655,5 +700,45 @@ footer .up-arrow img {
 .checkbox .checkbox input[type='checkbox']:checked ~ label:before {
   display: none;
   background: url("../images/chbox-checked.jpg") no-repeat center / cover;
+}
+.messagepop {
+  background-color: #FFFFFF;
+  border: 1px solid #999999;
+  cursor: default;
+  display: none;
+  margin-top: 15px;
+  position: absolute;
+  text-align: left;
+  width: 800px;
+  height: 600px;
+  left: 50%;
+  margin-left: -400px;
+  z-index: 50;
+  padding: 25px 25px 20px;
+}
+.messagepop p,
+.messagepop.div {
+  border-bottom: 1px solid #EFEFEF;
+  margin: 8px 0;
+  padding-bottom: 8px;
+}
+.catalogue-categories-list {
+  list-style: none;
+}
+.catalogue-categories-list li {
+  float: left;
+  width: 50%;
+  height: 70px;
+}
+.catalogue-categories-list .category-image {
+  float: left;
+  width: 40px;
+}
+.catalogue-categories-list .name {
+  margin-left: 60px;
+}
+.catalogue-categories-list .name a {
+  font-size: 15px;
+  line-height: 40px;
 }
 /*# sourceMappingURL=common.css.map */
