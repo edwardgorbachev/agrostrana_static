@@ -132,15 +132,11 @@
 }
 .card-product .product-card-photos-container .product-card-photos-list {
   box-sizing: border-box;
-  width: 135px;
   float: left;
   padding: 0 15px;
 }
 .card-product .product-card-photos-container .product-card-photos-list ul li {
   margin-bottom: 5px;
-}
-.card-product .product-card-photos-container .product-card-main-photo {
-  padding: 0 15px;
 }
 .card-product .product-card-photos-container .next-photo {
   height: 31px;
