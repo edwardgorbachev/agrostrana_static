@@ -80,7 +80,7 @@ function deselect(e) {
 
 $(function() {
 
-    $('.catalogue-link a').on('click', function(e) {
+    $('.catalogue-link a, a.mobile-bars').on('click', function(e) {
 
         e.preventDefault();
 
