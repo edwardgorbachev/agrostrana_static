@@ -43,8 +43,8 @@
 
                 $("#catalogue-categories-list-sub-pages tbody").html(""); // clear
 
-                // let row = $("<tr><td><div class=\"name\" style='margin-left: 0;'><a href=\"javascript:void(0);\" class='back-prod-link'> &lt; назад </a></div></td></tr>");
-                // $("#catalogue-categories-list-sub-pages tbody").append(row);
+                let row = $("<tr><td><div class=\"name\" style='margin-left: 0;'><a href=\"javascript:void(0);\" class='back-prod-link'> <img src='resources/images/svg/move-to-next.svg' style='transform: rotate(180deg); width: 10px;'  alt='' /> назад </a></div></td></tr>");
+                $("#catalogue-categories-list-sub-pages tbody").append(row);
 
                 items.each(function(){
 
@@ -59,10 +59,10 @@
                 $("#catalogue-categories-list-sub-pages").show();
             });
 
-            // $(document).on('click', ".back-prod-link", function(){
-            //     $("#catalogue-categories-list-sub-pages").hide();
-            //     $("#catalogue-categories-list").show();
-            // });
+            $(document).on('click', ".back-prod-link", function(){
+                $("#catalogue-categories-list-sub-pages").hide();
+                $("#catalogue-categories-list").show();
+            });
 
         });
 
@@ -992,6 +992,16 @@
 
             <div class="col-md-4 clearfix">
                 <div class="advertision-item selected">
+
+                    <div class="arrow-left"><a href="javascript:void(0);"><img src="resources/images/svg/move-to-next.svg" alt="" /></a></div>
+                    <div class="arrow-right"><a href="javascript:void(0);"><img src="resources/images/svg/move-to-next.svg" alt="" /></a></div>
+
+                    <div class="page-rounds clearfix">
+                        <div class="item">&nbsp;</div>
+                        <div class="item">&nbsp;</div>
+                        <div class="item">&nbsp;</div>
+                    </div>
+
                     <div class="image">
                         <img src="resources/images/adv_image_1.jpg" alt=""/>
                     </div>

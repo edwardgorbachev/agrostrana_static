@@ -832,3 +832,66 @@ footer .row {
   line-height: 40px;
 }
 /*# sourceMappingURL=common.css.map */
+
+
+@media all and (max-width: 979px) {
+  .home-advertision .col-md-4 {
+    width: 400px;
+    margin: 0 auto;
+    float: none;
+  }
+}
+
+@media all and (max-width: 979px) {
+
+  .advertision-item .arrow-left {
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 50px;
+  }
+
+
+  .advertision-item .arrow-left img,
+  .advertision-item .arrow-right img {
+    width: 30px;
+    height: 20px;
+  }
+
+  .advertision-item .arrow-left img {
+    transform: rotate(180deg);
+  }
+
+  .advertision-item .arrow-left a:hover img,
+  .advertision-item .arrow-right a:hover img {
+    opacity: 0.8;
+  }
+
+  .advertision-item .arrow-right {
+    position: absolute;
+    margin-left: 380px;
+    margin-top: 50px;
+  }
+
+  .page-rounds {
+    position: absolute;
+    margin-left: 160px;
+    margin-top: 135px;
+  }
+
+  .page-rounds .item {
+    float:left;
+    width: 10px;
+    height: 10px;
+    background: gray;
+    border-radius: 100%;
+    margin-right: 15px;
+  }
+}
+
+@media all and (min-width: 971px) {
+  .advertision-item .arrow-left,
+  .advertision-item .arrow-right,
+  .page-rounds {
+    display: none;
+  }
+}
