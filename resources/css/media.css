@@ -61,6 +61,12 @@
   .home-info .news-info .news-list .news-item:hover:nth-child(4) {
     background: url(../images/news_item_bg_4.jpg) no-repeat center;
   }
+  .home-info .news-info .news-list .news-item:hover:nth-child(5) {
+    background: url(../images/news_item_bg_5.jpg) no-repeat center;
+  }
+  .home-info .news-info .news-list .news-item:hover:nth-child(6) {
+    background: url(../images/news_item_bg_6.jpg) no-repeat center;
+  }
   .home-info .news-info .news-list .news-item:hover .news-description span {
     border-bottom: none;
   }
