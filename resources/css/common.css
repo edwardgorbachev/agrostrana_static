@@ -815,6 +815,11 @@ footer .row {
   width: 50%;
   height: 70px;
 }
+
+.catalogue-categories-list .sub-items {
+  display: none;
+}
+
 .catalogue-categories-list .category-image {
   float: left;
   width: 40px;

@@ -29,6 +29,45 @@
     <script type="text/javascript" src="resources/js/main.js"></script>
     <script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
 
+    <script type="text/javascript">
+
+        $(function(){
+
+            $("#catalogue-categories-list a").on('click', function(){
+
+                let link = $(this);
+
+                let cell = link.parent().parent();
+
+                let items = cell.find("li a");
+
+                $("#catalogue-categories-list-sub-pages tbody").html(""); // clear
+
+                // let row = $("<tr><td><div class=\"name\" style='margin-left: 0;'><a href=\"javascript:void(0);\" class='back-prod-link'> &lt; назад </a></div></td></tr>");
+                // $("#catalogue-categories-list-sub-pages tbody").append(row);
+
+                items.each(function(){
+
+                    let item = $(this);
+
+                    let row = $("<tr><td><div class=\"name\" style='margin-left: 0;'><a href=\"javascript:void(0);\"> " +item.text() + " </a></div></td></tr>");
+                    $("#catalogue-categories-list-sub-pages tbody").append(row);
+
+                });
+
+                $("#catalogue-categories-list").hide();
+                $("#catalogue-categories-list-sub-pages").show();
+            });
+
+            // $(document).on('click', ".back-prod-link", function(){
+            //     $("#catalogue-categories-list-sub-pages").hide();
+            //     $("#catalogue-categories-list").show();
+            // });
+
+        });
+
+    </script>
+
 </head>
 <body class="home">
 
@@ -354,14 +393,27 @@
     </div>
 
 <div class="container clearfix show-xs show-sm">
-<table style="margin-top: 20px" class="table table-bordered catalogue-categories-list">
+
+<table id="catalogue-categories-list-sub-pages" style="margin-top: 20px; display: none;" class="table table-bordered catalogue-categories-list">
+    <tbody>
+    </tbody>
+</table>
+
+<table id="catalogue-categories-list" style="margin-top: 20px" class="table table-bordered catalogue-categories-list">
     <tbody>
     <tr>
         <td>
             <div class="category-image">
              <div class="image"><img src="resources/images/svg/res/meat.svg" alt=""/></div>
              </div>
-            <div class="name"><a href="#">Мясо, мясная продукция</a></div>
+            <div class="name"><a href="javascript:void(0);">Мясо, мясная продукция</a></div>
+            <div class="sub-items">
+                <ul>
+                    <li><a href="#">Баранина</a></li>
+                    <li><a href="#">Свинина</a></li>
+                    <li><a href="#">Субпродукты</a></li>
+                </ul>
+            </div>
         </td>
     </tr>
     <tr>
@@ -369,7 +421,14 @@
             <div class="category-image">
                 <div class="image"><img src="resources/images/svg/res/bird.svg" alt=""/></div>
             </div>
-            <div class="name"><a href="#">Мясо птицы</a></div>
+            <div class="name"><a href="javascript:void(0);">Мясо птицы</a></div>
+            <div class="sub-items">
+                <ul>
+                    <li><a href="#">Курица</a></li>
+                    <li><a href="#">Индейка</a></li>
+                    <li><a href="#">Утка</a></li>
+                </ul>
+            </div>
         </td>
     </tr>
     <tr>
@@ -377,7 +436,14 @@
             <div class="category-image">
                 <div class="image"><img src="resources/images/svg/res/fish.svg" alt=""/></div>
             </div>
-            <div class="name"><a href="#">Рыба, Морепродукты</a></div>
+            <div class="name"><a href="javascript:void(0);">Рыба, Морепродукты</a></div>
+            <div class="sub-items">
+                <ul>
+                    <li><a href="#">Семга</a></li>
+                    <li><a href="#">Креветки</a></li>
+                    <li><a href="#">Икра</a></li>
+                </ul>
+            </div>
         </td>
     </tr>
     <tr>
@@ -387,7 +453,14 @@
             </div>
 
 
-            <div class="name"><a href="#">Овощи</a></div>
+            <div class="name"><a href="javascript:void(0);">Овощи</a></div>
+            <div class="sub-items">
+                <ul>
+                    <li><a href="#">Картофель</a></li>
+                    <li><a href="#">Томаты</a></li>
+                    <li><a href="#">Огурцы</a></li>
+                </ul>
+            </div>
         </td>
     </tr>
     <tr>
@@ -396,7 +469,13 @@
                 <div class="image"><img src="resources/images/svg/res/berries.svg" alt=""/></div>
             </div>
 
-            <div class="name"><a href="#">Фрукты и ягоды</a></div>
+            <div class="name"><a href="javascript:void(0);">Фрукты и ягоды</a></div>
+            <div class="sub-items">
+                <ul>
+                    <li><a href="#">Черника</a></li>
+                    <li><a href="#">Малина</a></li>
+                </ul>
+            </div>
         </td>
     </tr>
     <tr>
@@ -405,7 +484,14 @@
                 <div class="image"><img src="resources/images/svg/res/milk.svg" alt=""/></div>
             </div>
 
-            <div class="name"><a href="#">Молоко, молочная продукция</a></div>
+            <div class="name"><a href="javascript:void(0);">Молоко, молочная продукция</a></div>
+            <div class="sub-items">
+                <ul>
+                    <li><a href="#">Молоко</a></li>
+                    <li><a href="#">Сыр</a></li>
+                    <li><a href="#">Сметана</a></li>
+                </ul>
+            </div>
         </td>
     </tr>
     <tr>
@@ -414,7 +500,14 @@
                 <div class="image"><img src="resources/images/svg/res/croup.svg" alt=""/></div>
             </div>
 
-            <div class="name"><a href="#">Крупа</a></div>
+            <div class="name"><a href="javascript:void(0);">Крупа</a></div>
+            <div class="sub-items">
+                <ul>
+                    <li><a href="#">Рис</a></li>
+                    <li><a href="#">Гречка</a></li>
+                    <li><a href="#">Перловка</a></li>
+                </ul>
+            </div>
         </td>
     </tr>
     <tr>
@@ -422,7 +515,14 @@
             <div class="category-image">
                 <div class="image"><img src="resources/images/svg/res/corn.svg" alt=""/></div>
             </div>
-            <div class="name"><a href="#">Зернопродукты</a></div>
+            <div class="name"><a href="javascript:void(0);">Зернопродукты</a></div>
+            <div class="sub-items">
+                <ul>
+                    <li><a href="#">Пшеница</a></li>
+                    <li><a href="#">Овёс</a></li>
+                    <li><a href="#">Гречиха</a></li>
+                </ul>
+            </div>
         </td>
     </tr>
     <tr>
@@ -430,7 +530,14 @@
             <div class="category-image">
                 <div class="image"><img src="resources/images/svg/res/feed.svg" alt=""/></div>
             </div>
-            <div class="name"><a href="#">Корма</a></div>
+            <div class="name"><a href="javascript:void(0);">Корма</a></div>
+            <div class="sub-items">
+                <ul>
+                    <li><a href="#">Комбикорм</a></li>
+                    <li><a href="#">Зерно</a></li>
+                    <li><a href="#">Добавки</a></li>
+                </ul>
+            </div>
         </td>
     </tr>
     <tr>
@@ -438,7 +545,14 @@
             <div class="category-image">
                 <div class="image"><img src="resources/images/svg/res/nuts.svg" alt=""/></div>
             </div>
-            <div class="name"><a href="#">Орехи</a></div>
+            <div class="name"><a href="javascript:void(0);">Орехи</a></div>
+            <div class="sub-items">
+                <ul>
+                    <li><a href="#">Грецкие</a></li>
+                    <li><a href="#">Фундук</a></li>
+                    <li><a href="#">Миндаль</a></li>
+                </ul>
+            </div>
         </td>
     </tr>
     <tr>
@@ -446,7 +560,14 @@
             <div class="category-image">
                 <div class="image"><img src="resources/images/svg/res/mushrooms.svg" alt=""/></div>
             </div>
-            <div class="name"><a href="#">Грибы</a></div>
+            <div class="name"><a href="javascript:void(0);">Грибы</a></div>
+            <div class="sub-items">
+                <ul>
+                    <li><a href="#">Белые</a></li>
+                    <li><a href="#">Опята</a></li>
+                    <li><a href="#">Вешенки</a></li>
+                </ul>
+            </div>
         </td>
     </tr>
     <tr>
@@ -454,7 +575,14 @@
             <div class="category-image">
                 <div class="image"><img src="resources/images/svg/res/seed.svg" alt=""/></div>
             </div>
-            <div class="name"><a href="#">Семена и саженцы</a></div>
+            <div class="name"><a href="javascript:void(0);">Семена и саженцы</a></div>
+            <div class="sub-items">
+                <ul>
+                    <li><a href="#">Овощные</a></li>
+                    <li><a href="#">Плодовые</a></li>
+                    <li><a href="#">Цветочные</a></li>
+                </ul>
+            </div>
         </td>
     </tr>
     <tr>
@@ -462,7 +590,14 @@
             <div class="category-image">
                 <div class="image"><img src="resources/images/svg/res/box.svg" alt=""/></div>
             </div>
-            <div class="name"><a href="#">Упаковка</a></div>
+            <div class="name"><a href="javascript:void(0);">Упаковка</a></div>
+            <div class="sub-items">
+                <ul>
+                    <li><a href="#">Ящики</a></li>
+                    <li><a href="#">Контейнеры</a></li>
+                    <li><a href="#">Пакеты</a></li>
+                </ul>
+            </div>
         </td>
     </tr>
     <tr>
@@ -470,7 +605,14 @@
             <div class="category-image">
                 <div class="image"><img src="resources/images/svg/res/chemistry.svg" alt=""/></div>
             </div>
-            <div class="name"><a href="#">Агрохимия</a></div>
+            <div class="name"><a href="javascript:void(0);">Агрохимия</a></div>
+            <div class="sub-items">
+                <ul>
+                    <li><a href="#">Удобрения</a></li>
+                    <li><a href="#">Пестициды</a></li>
+                    <li><a href="#">Средства защиты растений</a></li>
+                </ul>
+            </div>
         </td>
     </tr>
     <tr>
@@ -478,7 +620,14 @@
             <div class="category-image">
                 <div class="image"><img src="resources/images/svg/res/tractor.svg" alt=""/></div>
             </div>
-            <div class="name"><a href="#">Техника</a></div>
+            <div class="name"><a href="javascript:void(0);">Техника</a></div>
+            <div class="sub-items">
+                <ul>
+                    <li><a href="#">Тракторы</a></li>
+                    <li><a href="#">Комбайны</a></li>
+                    <li><a href="#">Прицепы</a></li>
+                </ul>
+            </div>
         </td>
     </tr>
     <tr>
@@ -486,7 +635,14 @@
             <div class="category-image">
                 <div class="image"><img src="resources/images/svg/res/freeze.svg" alt=""/></div>
             </div>
-            <div class="name"><a href="#">Оборудование для <span class="nowrap">с/х</span></a></div>
+            <div class="name"><a href="javascript:void(0);">Оборудование для <span class="nowrap">с/х</span></a></div>
+            <div class="sub-items">
+                <ul>
+                    <li><a href="#">Холодильное</a></li>
+                    <li><a href="#">Сушильное</a></li>
+                    <li><a href="#">Упаковочное</a></li>
+                </ul>
+            </div>
         </td>
     </tr>
     </tbody>
